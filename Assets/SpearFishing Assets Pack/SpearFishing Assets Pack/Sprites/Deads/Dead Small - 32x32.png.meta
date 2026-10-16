@@ -1,0 +1,2366 @@
+fileFormatVersion: 2
+guid: d8e52469ff8660d448c78430d554d145
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 956906125778953700
+    second: Dead Small - 32x32_0
+  - first:
+      213: -2022443947644283103
+    second: Dead Small - 32x32_1
+  - first:
+      213: 1150543011614891088
+    second: Dead Small - 32x32_2
+  - first:
+      213: -1312468071946445288
+    second: Dead Small - 32x32_3
+  - first:
+      213: -1820546470446529335
+    second: Dead Small - 32x32_4
+  - first:
+      213: 2752687960412550488
+    second: Dead Small - 32x32_5
+  - first:
+      213: -7009524519711105316
+    second: Dead Small - 32x32_6
+  - first:
+      213: -8803495799644888851
+    second: Dead Small - 32x32_7
+  - first:
+      213: 6638354113169899487
+    second: Dead Small - 32x32_8
+  - first:
+      213: 2581714406097884884
+    second: Dead Small - 32x32_9
+  - first:
+      213: 4682885661127569658
+    second: Dead Small - 32x32_10
+  - first:
+      213: -6018738207352274332
+    second: Dead Small - 32x32_11
+  - first:
+      213: 6369797815086610307
+    second: Dead Small - 32x32_12
+  - first:
+      213: 713214598264720417
+    second: Dead Small - 32x32_13
+  - first:
+      213: 3994304133726043378
+    second: Dead Small - 32x32_14
+  - first:
+      213: 1356062500681659837
+    second: Dead Small - 32x32_15
+  - first:
+      213: 859408125022317009
+    second: Dead Small - 32x32_16
+  - first:
+      213: -2006630662999307402
+    second: Dead Small - 32x32_17
+  - first:
+      213: 370896071410033000
+    second: Dead Small - 32x32_18
+  - first:
+      213: 5884700977845251753
+    second: Dead Small - 32x32_19
+  - first:
+      213: -3182249961953022602
+    second: Dead Small - 32x32_20
+  - first:
+      213: -6367035283336122211
+    second: Dead Small - 32x32_21
+  - first:
+      213: 2983677006024601191
+    second: Dead Small - 32x32_22
+  - first:
+      213: -6796818504285537384
+    second: Dead Small - 32x32_23
+  - first:
+      213: 3994387963977248821
+    second: Dead Small - 32x32_24
+  - first:
+      213: -6677204820280979208
+    second: Dead Small - 32x32_25
+  - first:
+      213: -5962852074499331318
+    second: Dead Small - 32x32_26
+  - first:
+      213: 8169794169993761524
+    second: Dead Small - 32x32_27
+  - first:
+      213: 1389985708668116158
+    second: Dead Small - 32x32_28
+  - first:
+      213: 8721420703533867640
+    second: Dead Small - 32x32_29
+  - first:
+      213: 5956767161560025475
+    second: Dead Small - 32x32_30
+  - first:
+      213: -6202070702584202631
+    second: Dead Small - 32x32_31
+  - first:
+      213: -6785168866953280341
+    second: Dead Small - 32x32_32
+  - first:
+      213: 7211764592009297627
+    second: Dead Small - 32x32_33
+  - first:
+      213: -3421341491650808152
+    second: Dead Small - 32x32_34
+  - first:
+      213: 6400289470308779384
+    second: Dead Small - 32x32_35
+  - first:
+      213: 738140853254244645
+    second: Dead Small - 32x32_36
+  - first:
+      213: -5793884908954365623
+    second: Dead Small - 32x32_37
+  - first:
+      213: -6838255985744611212
+    second: Dead Small - 32x32_38
+  - first:
+      213: -543785343324941365
+    second: Dead Small - 32x32_39
+  - first:
+      213: -8047065356714011243
+    second: Dead Small - 32x32_40
+  - first:
+      213: 7900215660441127790
+    second: Dead Small - 32x32_41
+  - first:
+      213: 2390329765672504885
+    second: Dead Small - 32x32_42
+  - first:
+      213: 7605126528775609371
+    second: Dead Small - 32x32_43
+  - first:
+      213: -3744806072653756769
+    second: Dead Small - 32x32_44
+  - first:
+      213: -8156748973274961543
+    second: Dead Small - 32x32_45
+  - first:
+      213: -2504404390923471100
+    second: Dead Small - 32x32_46
+  - first:
+      213: -7084191588395772328
+    second: Dead Small - 32x32_47
+  - first:
+      213: -8348964557419064929
+    second: Dead Small - 32x32_48
+  - first:
+      213: 7170907209234661439
+    second: Dead Small - 32x32_49
+  - first:
+      213: 2488048670515219713
+    second: Dead Small - 32x32_50
+  - first:
+      213: -6546142952571462688
+    second: Dead Small - 32x32_51
+  - first:
+      213: 1020547455454208531
+    second: Dead Small - 32x32_52
+  - first:
+      213: 6799306469331859791
+    second: Dead Small - 32x32_53
+  - first:
+      213: -5111703284445407202
+    second: Dead Small - 32x32_54
+  - first:
+      213: 6108906611187116497
+    second: Dead Small - 32x32_55
+  - first:
+      213: -5255704761243615834
+    second: Dead Small - 32x32_56
+  - first:
+      213: 3065239119448599409
+    second: Dead Small - 32x32_57
+  - first:
+      213: 2286643437852790395
+    second: Dead Small - 32x32_58
+  - first:
+      213: 8937748759798159398
+    second: Dead Small - 32x32_59
+  - first:
+      213: -710793190240550735
+    second: Dead Small - 32x32_60
+  - first:
+      213: 7460153955596908814
+    second: Dead Small - 32x32_61
+  - first:
+      213: -837152667840545824
+    second: Dead Small - 32x32_62
+  - first:
+      213: -4922124120343707565
+    second: Dead Small - 32x32_63
+  - first:
+      213: 6266358463597319736
+    second: Dead Small - 32x32_64
+  - first:
+      213: -3273525928509447170
+    second: Dead Small - 32x32_65
+  - first:
+      213: 8887189398544533770
+    second: Dead Small - 32x32_66
+  - first:
+      213: -6974308729035624784
+    second: Dead Small - 32x32_67
+  - first:
+      213: -644025766497066322
+    second: Dead Small - 32x32_68
+  - first:
+      213: 2645920329291661439
+    second: Dead Small - 32x32_69
+  - first:
+      213: -5909907570011130453
+    second: Dead Small - 32x32_70
+  - first:
+      213: 3779396510437732539
+    second: Dead Small - 32x32_71
+  - first:
+      213: -2707792043944770667
+    second: Dead Small - 32x32_72
+  - first:
+      213: 1904827541675331528
+    second: Dead Small - 32x32_73
+  - first:
+      213: -8696288598905762135
+    second: Dead Small - 32x32_74
+  - first:
+      213: -916619925184874883
+    second: Dead Small - 32x32_75
+  - first:
+      213: -7152413039216974395
+    second: Dead Small - 32x32_76
+  - first:
+      213: -7416919059359923803
+    second: Dead Small - 32x32_77
+  - first:
+      213: -787921834983932233
+    second: Dead Small - 32x32_78
+  - first:
+      213: 8973132289522835109
+    second: Dead Small - 32x32_79
+  - first:
+      213: 7900767915150463363
+    second: Dead Small - 32x32_80
+  - first:
+      213: 8213852306232650315
+    second: Dead Small - 32x32_81
+  - first:
+      213: 3018521232784307139
+    second: Dead Small - 32x32_82
+  - first:
+      213: -7951322920122587167
+    second: Dead Small - 32x32_83
+  - first:
+      213: -7127625939613859813
+    second: Dead Small - 32x32_84
+  - first:
+      213: -8067544583214574420
+    second: Dead Small - 32x32_85
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Dead Small - 32x32_0
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 543
+        width: 129
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5237e2d0d974d00800000000000000
+      internalID: 956906125778953700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_1
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 521
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 127168ae1f5dee3e0800000000000000
+      internalID: -2022443947644283103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_2
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 515
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05c1d12f5cc87ff00800000000000000
+      internalID: 1150543011614891088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_3
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 515
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e17980e3d29cde0800000000000000
+      internalID: -1312468071946445288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 520
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c481fb71ae1cb6e0800000000000000
+      internalID: -1820546470446529335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_5
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 520
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85572e99d13833620800000000000000
+      internalID: 2752687960412550488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 489
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde9a3e569a29be90800000000000000
+      internalID: -7009524519711105316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_7
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 483
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de0e5809633b3d580800000000000000
+      internalID: -8803495799644888851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_8
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 483
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fdfbeb8f4eb202c50800000000000000
+      internalID: 6638354113169899487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_9
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 488
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d619f6e29714d320800000000000000
+      internalID: 2581714406097884884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_10
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 488
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af07743a2b3fcf040800000000000000
+      internalID: 4682885661127569658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_11
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 457
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46242b23d75297ca0800000000000000
+      internalID: -6018738207352274332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_12
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 451
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 387fb4b3d51166850800000000000000
+      internalID: 6369797815086610307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_13
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 451
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12c013af5e8d5e900800000000000000
+      internalID: 713214598264720417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_14
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 456
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2fc7d97627e9e6730800000000000000
+      internalID: 3994304133726043378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_15
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 456
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db5bb5ed8a3b1d210800000000000000
+      internalID: 1356062500681659837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_16
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 425
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d92a09e22b3deb00800000000000000
+      internalID: 859408125022317009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_17
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 419
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67b05882b040724e0800000000000000
+      internalID: -2006630662999307402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_18
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 419
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 861abf80300b52500800000000000000
+      internalID: 370896071410033000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_19
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 424
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae2cd16c58aaa150800000000000000
+      internalID: 5884700977845251753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_20
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 424
+        width: 27
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 67d2a47158066d3d0800000000000000
+      internalID: -3182249961953022602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_21
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 391
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d903f50d42fb3a7a0800000000000000
+      internalID: -6367035283336122211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_22
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 387
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ee894cd66286920800000000000000
+      internalID: 2983677006024601191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_23
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 387
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89b3249d499dca1a0800000000000000
+      internalID: -6796818504285537384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_24
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 390
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 530b5f7a0baee6730800000000000000
+      internalID: 3994387963977248821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_25
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 390
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f050a2e79dc553a0800000000000000
+      internalID: -6677204820280979208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_26
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 359
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b244b71a1bf3da0800000000000000
+      internalID: -5962852074499331318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_27
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 355
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2198e1380f06170800000000000000
+      internalID: 8169794169993761524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_28
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 355
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebc580833a83a4310800000000000000
+      internalID: 1389985708668116158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_29
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 358
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 872afdafbe5b80970800000000000000
+      internalID: 8721420703533867640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_30
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 358
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3894f725c20baa250800000000000000
+      internalID: 5956767161560025475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_31
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 327
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97a7c945e81dde9a0800000000000000
+      internalID: -6202070702584202631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_32
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 323
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba4c5386ddc36d1a0800000000000000
+      internalID: -6785168866953280341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_33
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 323
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bde3476dfa5551460800000000000000
+      internalID: 7211764592009297627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_34
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 326
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a639d65a04f480d0800000000000000
+      internalID: -3421341491650808152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_35
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 326
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8758d61fc5562d850800000000000000
+      internalID: 6400289470308779384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_36
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 295
+        width: 22
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5294c68f1376e3a00800000000000000
+      internalID: 738140853254244645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_37
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 291
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94157446f5cf79fa0800000000000000
+      internalID: -5793884908954365623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_38
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 291
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 478f08e5962a911a0800000000000000
+      internalID: -6838255985744611212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_39
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 294
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc39d018c161478f0800000000000000
+      internalID: -543785343324941365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_40
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 294
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59595b871b4135090800000000000000
+      internalID: -8047065356714011243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_41
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 263
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6b4299394433ad60800000000000000
+      internalID: 7900215660441127790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_42
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 259
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53ec3f2e1482c2120800000000000000
+      internalID: 2390329765672504885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_43
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 259
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cd193c846da8960800000000000000
+      internalID: 7605126528775609371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_44
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 263
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f964fbeb7b6c70cc0800000000000000
+      internalID: -3744806072653756769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_45
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 263
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 979e9ed66086dce80800000000000000
+      internalID: -8156748973274961543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_46
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 231
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 407f311b9719e3dd0800000000000000
+      internalID: -2504404390923471100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_47
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 227
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8561cd4b845efad90800000000000000
+      internalID: -7084191588395772328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_48
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 227
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91d5b048f4822c80800000000000000
+      internalID: -8348964557419064929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_49
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 231
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f3048bb1d1e248360800000000000000
+      internalID: 7170907209234661439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_50
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 231
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10d41f56513578220800000000000000
+      internalID: 2488048670515219713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_51
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 199
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eb1d07eaad6725a0800000000000000
+      internalID: -6546142952571462688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_52
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 195
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312e6cee086b92e00800000000000000
+      internalID: 1020547455454208531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_53
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 195
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f497a87a53dfb5e50800000000000000
+      internalID: 6799306469331859791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_54
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 199
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e181f6d12f49f09b0800000000000000
+      internalID: -5111703284445407202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_55
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 199
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d9e7dd423237c450800000000000000
+      internalID: 6108906611187116497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_56
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 167
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6adbeb59d5cff07b0800000000000000
+      internalID: -5255704761243615834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_57
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 163
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 17b6d522dbae98a20800000000000000
+      internalID: 3065239119448599409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_58
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 163
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7e8131771acbbf10800000000000000
+      internalID: 2286643437852790395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_59
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 167
+        width: 29
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 628157f8423490c70800000000000000
+      internalID: 8937748759798159398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_60
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 167
+        width: 28
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b002f20c51c226f0800000000000000
+      internalID: -710793190240550735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_61
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 136
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e09341d3f7ac78760800000000000000
+      internalID: 7460153955596908814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 131
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ebf7928516d164f0800000000000000
+      internalID: -837152667840545824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_63
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 131
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 350088ae03a11bbb0800000000000000
+      internalID: -4922124120343707565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_64
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 137
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8361bf172d396f650800000000000000
+      internalID: 6266358463597319736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_65
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 137
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef3e92c03891292d0800000000000000
+      internalID: -3273525928509447170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_66
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 104
+        width: 24
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a094ddfeba3a55b70800000000000000
+      internalID: 8887189398544533770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_67
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 99
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0beece39927463f90800000000000000
+      internalID: -6974308729035624784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_68
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 99
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea26eb14af5ff07f0800000000000000
+      internalID: -644025766497066322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_69
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 105
+        width: 29
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f700a63558238b420800000000000000
+      internalID: 2645920329291661439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_70
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 105
+        width: 30
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba5381a806acbfda0800000000000000
+      internalID: -5909907570011130453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_71
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 72
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0fdf52a1d137430800000000000000
+      internalID: 3779396510437732539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_72
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 67
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5930b078b7dfb6ad0800000000000000
+      internalID: -2707792043944770667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_73
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 67
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cf40f39e8e4f6a10800000000000000
+      internalID: 1904827541675331528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_74
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 72
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ae41fd1893905780800000000000000
+      internalID: -8696288598905762135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_75
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 73
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d767f45d8038743f0800000000000000
+      internalID: -916619925184874883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_76
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 40
+        width: 18
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c5a9966c368dbc90800000000000000
+      internalID: -7152413039216974395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_77
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 35
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1070b796fc11990800000000000000
+      internalID: -7416919059359923803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_78
+      rect:
+        serializedVersion: 2
+        x: 67
+        y: 35
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7be3203044db015f0800000000000000
+      internalID: -787921834983932233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_79
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 40
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae989f8648f68c70800000000000000
+      internalID: 8973132289522835109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_80
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 41
+        width: 27
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 381d85b0f8a25ad60800000000000000
+      internalID: 7900767915150463363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_81
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 7
+        width: 16
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b4a258657277df170800000000000000
+      internalID: 8213852306232650315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_82
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 3
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c335138111f3e920800000000000000
+      internalID: 3018521232784307139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_83
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 3
+        width: 16
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e7ebab9ee937a190800000000000000
+      internalID: -7951322920122587167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_84
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 7
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b10c471c8f5951d90800000000000000
+      internalID: -7127625939613859813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dead Small - 32x32_85
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 7
+        width: 27
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca45edbf1f25a0090800000000000000
+      internalID: -8067544583214574420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Dead Small - 32x32_0: 956906125778953700
+      Dead Small - 32x32_1: -2022443947644283103
+      Dead Small - 32x32_10: 4682885661127569658
+      Dead Small - 32x32_11: -6018738207352274332
+      Dead Small - 32x32_12: 6369797815086610307
+      Dead Small - 32x32_13: 713214598264720417
+      Dead Small - 32x32_14: 3994304133726043378
+      Dead Small - 32x32_15: 1356062500681659837
+      Dead Small - 32x32_16: 859408125022317009
+      Dead Small - 32x32_17: -2006630662999307402
+      Dead Small - 32x32_18: 370896071410033000
+      Dead Small - 32x32_19: 5884700977845251753
+      Dead Small - 32x32_2: 1150543011614891088
+      Dead Small - 32x32_20: -3182249961953022602
+      Dead Small - 32x32_21: -6367035283336122211
+      Dead Small - 32x32_22: 2983677006024601191
+      Dead Small - 32x32_23: -6796818504285537384
+      Dead Small - 32x32_24: 3994387963977248821
+      Dead Small - 32x32_25: -6677204820280979208
+      Dead Small - 32x32_26: -5962852074499331318
+      Dead Small - 32x32_27: 8169794169993761524
+      Dead Small - 32x32_28: 1389985708668116158
+      Dead Small - 32x32_29: 8721420703533867640
+      Dead Small - 32x32_3: -1312468071946445288
+      Dead Small - 32x32_30: 5956767161560025475
+      Dead Small - 32x32_31: -6202070702584202631
+      Dead Small - 32x32_32: -6785168866953280341
+      Dead Small - 32x32_33: 7211764592009297627
+      Dead Small - 32x32_34: -3421341491650808152
+      Dead Small - 32x32_35: 6400289470308779384
+      Dead Small - 32x32_36: 738140853254244645
+      Dead Small - 32x32_37: -5793884908954365623
+      Dead Small - 32x32_38: -6838255985744611212
+      Dead Small - 32x32_39: -543785343324941365
+      Dead Small - 32x32_4: -1820546470446529335
+      Dead Small - 32x32_40: -8047065356714011243
+      Dead Small - 32x32_41: 7900215660441127790
+      Dead Small - 32x32_42: 2390329765672504885
+      Dead Small - 32x32_43: 7605126528775609371
+      Dead Small - 32x32_44: -3744806072653756769
+      Dead Small - 32x32_45: -8156748973274961543
+      Dead Small - 32x32_46: -2504404390923471100
+      Dead Small - 32x32_47: -7084191588395772328
+      Dead Small - 32x32_48: -8348964557419064929
+      Dead Small - 32x32_49: 7170907209234661439
+      Dead Small - 32x32_5: 2752687960412550488
+      Dead Small - 32x32_50: 2488048670515219713
+      Dead Small - 32x32_51: -6546142952571462688
+      Dead Small - 32x32_52: 1020547455454208531
+      Dead Small - 32x32_53: 6799306469331859791
+      Dead Small - 32x32_54: -5111703284445407202
+      Dead Small - 32x32_55: 6108906611187116497
+      Dead Small - 32x32_56: -5255704761243615834
+      Dead Small - 32x32_57: 3065239119448599409
+      Dead Small - 32x32_58: 2286643437852790395
+      Dead Small - 32x32_59: 8937748759798159398
+      Dead Small - 32x32_6: -7009524519711105316
+      Dead Small - 32x32_60: -710793190240550735
+      Dead Small - 32x32_61: 7460153955596908814
+      Dead Small - 32x32_62: -837152667840545824
+      Dead Small - 32x32_63: -4922124120343707565
+      Dead Small - 32x32_64: 6266358463597319736
+      Dead Small - 32x32_65: -3273525928509447170
+      Dead Small - 32x32_66: 8887189398544533770
+      Dead Small - 32x32_67: -6974308729035624784
+      Dead Small - 32x32_68: -644025766497066322
+      Dead Small - 32x32_69: 2645920329291661439
+      Dead Small - 32x32_7: -8803495799644888851
+      Dead Small - 32x32_70: -5909907570011130453
+      Dead Small - 32x32_71: 3779396510437732539
+      Dead Small - 32x32_72: -2707792043944770667
+      Dead Small - 32x32_73: 1904827541675331528
+      Dead Small - 32x32_74: -8696288598905762135
+      Dead Small - 32x32_75: -916619925184874883
+      Dead Small - 32x32_76: -7152413039216974395
+      Dead Small - 32x32_77: -7416919059359923803
+      Dead Small - 32x32_78: -787921834983932233
+      Dead Small - 32x32_79: 8973132289522835109
+      Dead Small - 32x32_8: 6638354113169899487
+      Dead Small - 32x32_80: 7900767915150463363
+      Dead Small - 32x32_81: 8213852306232650315
+      Dead Small - 32x32_82: 3018521232784307139
+      Dead Small - 32x32_83: -7951322920122587167
+      Dead Small - 32x32_84: -7127625939613859813
+      Dead Small - 32x32_85: -8067544583214574420
+      Dead Small - 32x32_9: 2581714406097884884
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

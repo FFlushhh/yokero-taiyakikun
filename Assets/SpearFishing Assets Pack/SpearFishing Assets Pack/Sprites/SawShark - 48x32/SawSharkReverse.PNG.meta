@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 02c541ca4a6b49f439ea71b8c45de9d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 831872382276487547
+    second: SawSharkReverse_0
+  - first:
+      213: -7525180298860549798
+    second: SawSharkReverse_1
+  - first:
+      213: -2036460585669717574
+    second: SawSharkReverse_2
+  - first:
+      213: 7788542749779154446
+    second: SawSharkReverse_3
+  - first:
+      213: -8002858810452571137
+    second: SawSharkReverse_4
+  - first:
+      213: 3046016124647619478
+    second: SawSharkReverse_5
+  - first:
+      213: 7325135330712018778
+    second: SawSharkReverse_6
+  - first:
+      213: -7858719220848516017
+    second: SawSharkReverse_7
+  - first:
+      213: -5511372064951739683
+    second: SawSharkReverse_8
+  - first:
+      213: 2397179950039178818
+    second: SawSharkReverse_9
+  - first:
+      213: 8116422687721711006
+    second: SawSharkReverse_10
+  - first:
+      213: 1390786313578222654
+    second: SawSharkReverse_11
+  - first:
+      213: 3325234389313105212
+    second: SawSharkReverse_12
+  - first:
+      213: -7756571638133935852
+    second: SawSharkReverse_13
+  - first:
+      213: -2662829762984550544
+    second: SawSharkReverse_14
+  - first:
+      213: -930337036033536402
+    second: SawSharkReverse_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SawSharkReverse_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 39
+        width: 42
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b794c0436876b8b00800000000000000
+      internalID: 831872382276487547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_1
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 39
+        width: 39
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5926a76360319790800000000000000
+      internalID: -7525180298860549798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 39
+        width: 42
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab1921013e90db3e0800000000000000
+      internalID: -2036460585669717574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_3
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 39
+        width: 44
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e06d78e8d56761c60800000000000000
+      internalID: 7788542749779154446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 39
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffb8e57105220f090800000000000000
+      internalID: -8002858810452571137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_5
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 39
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69bbbb1e68f954a20800000000000000
+      internalID: 3046016124647619478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_6
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 39
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5fd0c6e5cb18a560800000000000000
+      internalID: 7325135330712018778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_7
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 39
+        width: 44
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f442ac3818830f290800000000000000
+      internalID: -7858719220848516017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 7
+        width: 42
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda5a83be4ca383b0800000000000000
+      internalID: -5511372064951739683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_9
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 5
+        width: 39
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24e16c8b67e744120800000000000000
+      internalID: 2397179950039178818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_10
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 5
+        width: 42
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e95e29c8e6353a070800000000000000
+      internalID: 8116422687721711006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_11
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 5
+        width: 44
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e341e4398c01d4310800000000000000
+      internalID: 1390786313578222654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_12
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 6
+        width: 41
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3dabe92f0b952e20800000000000000
+      internalID: 3325234389313105212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_13
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 7
+        width: 40
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4113822f03f1b5490800000000000000
+      internalID: -7756571638133935852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_14
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 7
+        width: 41
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07fd7f7507abb0bd0800000000000000
+      internalID: -2662829762984550544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SawSharkReverse_15
+      rect:
+        serializedVersion: 2
+        x: 338
+        y: 7
+        width: 44
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6ec4d51567c613f0800000000000000
+      internalID: -930337036033536402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      SawSharkReverse_0: 831872382276487547
+      SawSharkReverse_1: -7525180298860549798
+      SawSharkReverse_10: 8116422687721711006
+      SawSharkReverse_11: 1390786313578222654
+      SawSharkReverse_12: 3325234389313105212
+      SawSharkReverse_13: -7756571638133935852
+      SawSharkReverse_14: -2662829762984550544
+      SawSharkReverse_15: -930337036033536402
+      SawSharkReverse_2: -2036460585669717574
+      SawSharkReverse_3: 7788542749779154446
+      SawSharkReverse_4: -8002858810452571137
+      SawSharkReverse_5: 3046016124647619478
+      SawSharkReverse_6: 7325135330712018778
+      SawSharkReverse_7: -7858719220848516017
+      SawSharkReverse_8: -5511372064951739683
+      SawSharkReverse_9: 2397179950039178818
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

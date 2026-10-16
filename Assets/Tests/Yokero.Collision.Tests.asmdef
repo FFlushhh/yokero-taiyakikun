@@ -1,0 +1,16 @@
+{
+    "name": "Yokero.Collision.Tests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a7bda75cb024d854883a26d067ce2b04"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

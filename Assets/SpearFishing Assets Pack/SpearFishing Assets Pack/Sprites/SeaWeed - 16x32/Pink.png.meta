@@ -1,0 +1,2626 @@
+fileFormatVersion: 2
+guid: b678f6249b77e214281fa55e40db25d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7381184880430962403
+    second: Pink_0
+  - first:
+      213: 139881317523503543
+    second: Pink_1
+  - first:
+      213: -2698069653466453940
+    second: Pink_2
+  - first:
+      213: -3962920276799938668
+    second: Pink_3
+  - first:
+      213: 6815019005497079155
+    second: Pink_4
+  - first:
+      213: 4966520737234555678
+    second: Pink_5
+  - first:
+      213: -2993699658363159222
+    second: Pink_6
+  - first:
+      213: -4353293926914191365
+    second: Pink_7
+  - first:
+      213: 2451925445430609146
+    second: Pink_8
+  - first:
+      213: 2597259338202843451
+    second: Pink_9
+  - first:
+      213: -942109970077638612
+    second: Pink_10
+  - first:
+      213: -845820854023452326
+    second: Pink_11
+  - first:
+      213: -3702374633614268465
+    second: Pink_12
+  - first:
+      213: -2576162496561395546
+    second: Pink_13
+  - first:
+      213: 3903090132030290891
+    second: Pink_14
+  - first:
+      213: -1070786133750771281
+    second: Pink_15
+  - first:
+      213: -2861354452907581786
+    second: Pink_16
+  - first:
+      213: 3472590331781178929
+    second: Pink_17
+  - first:
+      213: 2923636594288005845
+    second: Pink_18
+  - first:
+      213: -5663252365120651252
+    second: Pink_19
+  - first:
+      213: 3396489723399940345
+    second: Pink_20
+  - first:
+      213: -4558251795355019679
+    second: Pink_21
+  - first:
+      213: 134833331926615786
+    second: Pink_22
+  - first:
+      213: 4260375011821521710
+    second: Pink_23
+  - first:
+      213: 4707978725416701449
+    second: Pink_24
+  - first:
+      213: 221569070702146843
+    second: Pink_25
+  - first:
+      213: 6500171455524716412
+    second: Pink_26
+  - first:
+      213: -9032790855149585028
+    second: Pink_27
+  - first:
+      213: -7315496754983333527
+    second: Pink_28
+  - first:
+      213: -6223115515978540675
+    second: Pink_29
+  - first:
+      213: -5707730366462450929
+    second: Pink_30
+  - first:
+      213: -7287695720372602663
+    second: Pink_31
+  - first:
+      213: -2568107558662682153
+    second: Pink_32
+  - first:
+      213: 6126479412735558834
+    second: Pink_33
+  - first:
+      213: -1326196376255646321
+    second: Pink_34
+  - first:
+      213: -5639224571496366744
+    second: Pink_35
+  - first:
+      213: -4366833975737877004
+    second: Pink_36
+  - first:
+      213: 7001283196855539318
+    second: Pink_37
+  - first:
+      213: 7069602862040033984
+    second: Pink_38
+  - first:
+      213: 8797028406639109315
+    second: Pink_39
+  - first:
+      213: -5136396875290005054
+    second: Pink_40
+  - first:
+      213: -4800327501244115620
+    second: Pink_41
+  - first:
+      213: 8920061084629153414
+    second: Pink_42
+  - first:
+      213: -9199339993519372603
+    second: Pink_43
+  - first:
+      213: 6563712326625123996
+    second: Pink_44
+  - first:
+      213: 4541344482109046075
+    second: Pink_45
+  - first:
+      213: 4931628397042228236
+    second: Pink_46
+  - first:
+      213: 773445571042289599
+    second: Pink_47
+  - first:
+      213: -5693590856633982473
+    second: Pink_48
+  - first:
+      213: 3069724684545169765
+    second: Pink_49
+  - first:
+      213: 3134657573762994905
+    second: Pink_50
+  - first:
+      213: 7099107548772064380
+    second: Pink_51
+  - first:
+      213: 3911385595640394473
+    second: Pink_52
+  - first:
+      213: 6879314662389689575
+    second: Pink_53
+  - first:
+      213: 752257392423218140
+    second: Pink_54
+  - first:
+      213: -5904796082694008940
+    second: Pink_55
+  - first:
+      213: -4621221662940943214
+    second: Pink_56
+  - first:
+      213: -1526078477136729637
+    second: Pink_57
+  - first:
+      213: -4860840777343632814
+    second: Pink_58
+  - first:
+      213: 7131342328215491418
+    second: Pink_59
+  - first:
+      213: 7225865384656489529
+    second: Pink_60
+  - first:
+      213: 529314322927141975
+    second: Pink_61
+  - first:
+      213: 5411161169177938348
+    second: Pink_62
+  - first:
+      213: 3256163096714996773
+    second: Pink_63
+  - first:
+      213: -5879074442745022680
+    second: Pink_64
+  - first:
+      213: -4723799784403066753
+    second: Pink_65
+  - first:
+      213: 780368323778425130
+    second: Pink_66
+  - first:
+      213: -2070996238139599271
+    second: Pink_67
+  - first:
+      213: -3431299774529374178
+    second: Pink_68
+  - first:
+      213: -1827747588767561229
+    second: Pink_69
+  - first:
+      213: -3510841285758826685
+    second: Pink_70
+  - first:
+      213: 7358373070792944074
+    second: Pink_71
+  - first:
+      213: 9148273826152520818
+    second: Pink_72
+  - first:
+      213: -4983467575604466865
+    second: Pink_73
+  - first:
+      213: 3962725233080083779
+    second: Pink_74
+  - first:
+      213: 7404397936995005483
+    second: Pink_75
+  - first:
+      213: 3004554827943444023
+    second: Pink_76
+  - first:
+      213: -2179700343192961210
+    second: Pink_77
+  - first:
+      213: 4165008546269931950
+    second: Pink_78
+  - first:
+      213: -1973709902984112066
+    second: Pink_79
+  - first:
+      213: -7698312087594229985
+    second: Pink_80
+  - first:
+      213: -7715585005579789980
+    second: Pink_81
+  - first:
+      213: -8808211500381782674
+    second: Pink_82
+  - first:
+      213: -4796490682376632854
+    second: Pink_83
+  - first:
+      213: -5653224567502038472
+    second: Pink_84
+  - first:
+      213: -6683624517708611062
+    second: Pink_85
+  - first:
+      213: -5489894905991480978
+    second: Pink_86
+  - first:
+      213: 6863479497773588596
+    second: Pink_87
+  - first:
+      213: 3178111157738698066
+    second: Pink_88
+  - first:
+      213: -4565729327109545520
+    second: Pink_89
+  - first:
+      213: 1760942730738525736
+    second: Pink_90
+  - first:
+      213: 7284466858618441058
+    second: Pink_91
+  - first:
+      213: 6405069173189539261
+    second: Pink_92
+  - first:
+      213: 7357865054893386570
+    second: Pink_93
+  - first:
+      213: 1953880540131532393
+    second: Pink_94
+  - first:
+      213: -9133734394702224175
+    second: Pink_95
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pink_0
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 223
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d19ad6c5573c09990800000000000000
+      internalID: -7381184880430962403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 223
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b9b3b13155f0f100800000000000000
+      internalID: 139881317523503543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_2
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 223
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c48eed5f1f78e8ad0800000000000000
+      internalID: -2698069653466453940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_3
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 223
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49f95243101e009c0800000000000000
+      internalID: -3962920276799938668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_4
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 223
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37570309dafc39e50800000000000000
+      internalID: 6815019005497079155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_5
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 223
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e131a78fb40ace440800000000000000
+      internalID: 4966520737234555678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 223
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4d3e03a50e3476d0800000000000000
+      internalID: -2993699658363159222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 223
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bff0a6bfc3ef593c0800000000000000
+      internalID: -4353293926914191365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 223
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: af402a6a33df60220800000000000000
+      internalID: 2451925445430609146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_9
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 223
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3985237b915b0420800000000000000
+      internalID: 2597259338202843451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_10
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 223
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c202b2649f3fce2f0800000000000000
+      internalID: -942109970077638612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_11
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 223
+        width: 8
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5980542a6a0344f0800000000000000
+      internalID: -845820854023452326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_12
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 191
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fc7210203e58e9cc0800000000000000
+      internalID: -3702374633614268465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_13
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 191
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a846c4cbd1af3cd0800000000000000
+      internalID: -2576162496561395546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_14
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 191
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb7ffdabcf8a2630800000000000000
+      internalID: 3903090132030290891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_15
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 191
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa11f534fadc321f0800000000000000
+      internalID: -1070786133750771281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_16
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 191
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ae16f1094d6a48d0800000000000000
+      internalID: -2861354452907581786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_17
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 191
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136e548128e113030800000000000000
+      internalID: 3472590331781178929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_18
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 191
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d29ede0ef7d29820800000000000000
+      internalID: 2923636594288005845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_19
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 191
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c00c797aaf51861b0800000000000000
+      internalID: -5663252365120651252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_20
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 191
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f8a4867861c22f20800000000000000
+      internalID: 3396489723399940345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_21
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 191
+        width: 10
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 166d31d8426ddb0c0800000000000000
+      internalID: -4558251795355019679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_22
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 191
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae64e5573360fd100800000000000000
+      internalID: 134833331926615786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_23
+      rect:
+        serializedVersion: 2
+        x: 178
+        y: 191
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2b82953084ef1b30800000000000000
+      internalID: 4260375011821521710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 159
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90e0f82f4b9165140800000000000000
+      internalID: 4707978725416701449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_25
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 159
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b153a6855eb231300800000000000000
+      internalID: 221569070702146843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_26
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 159
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7f3fa9df7f353a50800000000000000
+      internalID: 6500171455524716412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_27
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 159
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d7964339415a280800000000000000
+      internalID: -9032790855149585028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_28
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 159
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96112b3e5722a7a90800000000000000
+      internalID: -7315496754983333527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_29
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 159
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7990e1e86d03a9a0800000000000000
+      internalID: -6223115515978540675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_30
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 159
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f03ab49f8711ac0b0800000000000000
+      internalID: -5707730366462450929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_31
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 159
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d87e0caa57ecda90800000000000000
+      internalID: -7287695720372602663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_32
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 159
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d94ae428cf3c5cd0800000000000000
+      internalID: -2568107558662682153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_33
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 159
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b4c8dff090a50550800000000000000
+      internalID: 6126479412735558834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_34
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 159
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f853fda1c67689de0800000000000000
+      internalID: -1326196376255646321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_35
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 159
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86dfd4f41237db1b0800000000000000
+      internalID: -5639224571496366744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_36
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 127
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd7903b2a3e563c0800000000000000
+      internalID: -4366833975737877004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_37
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 127
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6765c7029fd892160800000000000000
+      internalID: 7001283196855539318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_38
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 127
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ca2bfeb8564c1260800000000000000
+      internalID: 7069602862040033984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_39
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 127
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c4aeb82ab2551a70800000000000000
+      internalID: 8797028406639109315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_40
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 127
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c1b9e6714ad7b8b0800000000000000
+      internalID: -5136396875290005054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_41
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 127
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c555ec2229fc16db0800000000000000
+      internalID: -4800327501244115620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_42
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 127
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6863b14cb4c6acb70800000000000000
+      internalID: 8920061084629153414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_43
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 127
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c6cb3e1401655080800000000000000
+      internalID: -9199339993519372603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_44
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 127
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ed754c59df61b50800000000000000
+      internalID: 6563712326625123996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_45
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 127
+        width: 9
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3d3ac2deb8160f30800000000000000
+      internalID: 4541344482109046075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_46
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 127
+        width: 8
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0c5ee1f5e9a07440800000000000000
+      internalID: 4931628397042228236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_47
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 127
+        width: 7
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb7231326a4dbba00800000000000000
+      internalID: 773445571042289599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_48
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 95
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f16be5284d4cf0b0800000000000000
+      internalID: -5693590856633982473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_49
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 95
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5691094265ad99a20800000000000000
+      internalID: 3069724684545169765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_50
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 95
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d291a8847a808b20800000000000000
+      internalID: 3134657573762994905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_51
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 95
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7c5ad2f3b8158260800000000000000
+      internalID: 7099107548772064380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_52
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 95
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e2b9bfc978084630800000000000000
+      internalID: 3911385595640394473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_53
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 95
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ecafddbc3c387f50800000000000000
+      internalID: 6879314662389689575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_54
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 95
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdb2c0fdc1e807a00800000000000000
+      internalID: 752257392423218140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_55
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 95
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49fc7eb6f33fd0ea0800000000000000
+      internalID: -5904796082694008940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_56
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 95
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 29ca010c16f1edfb0800000000000000
+      internalID: -4621221662940943214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_57
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 95
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd965e6e5b742dae0800000000000000
+      internalID: -1526078477136729637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_58
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 95
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25af2bc1113da8cb0800000000000000
+      internalID: -4860840777343632814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_59
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 95
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a53ddf4601e97f260800000000000000
+      internalID: 7131342328215491418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_60
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 63
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ccd37784e674460800000000000000
+      internalID: 7225865384656489529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_61
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 63
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75449908290885700800000000000000
+      internalID: 529314322927141975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_62
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 63
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca90d3fe96e481b40800000000000000
+      internalID: 5411161169177938348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_63
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 63
+        width: 9
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52cee66a517303d20800000000000000
+      internalID: 3256163096714996773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_64
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 63
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 827fa1861f4596ea0800000000000000
+      internalID: -5879074442745022680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_65
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 63
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f70a694bf11b17eb0800000000000000
+      internalID: -4723799784403066753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_66
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 63
+        width: 6
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a21b7cc1bdc64da00800000000000000
+      internalID: 780368323778425130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_67
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 63
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 956d48ed4e75243e0800000000000000
+      internalID: -2070996238139599271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_68
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 63
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e187c4de8039160d0800000000000000
+      internalID: -3431299774529374178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_69
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 63
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9ce68704982a6e0800000000000000
+      internalID: -1827747588767561229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_70
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 63
+        width: 8
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347c19ba37cf64fc0800000000000000
+      internalID: -3510841285758826685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_71
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 63
+        width: 7
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac9e96152513e1660800000000000000
+      internalID: 7358373070792944074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_72
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 31
+        width: 6
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27c13d3439235fe70800000000000000
+      internalID: 9148273826152520818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_73
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 31
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4b2b6eb4aa27dab0800000000000000
+      internalID: -4983467575604466865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_74
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 31
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3452734aa9d6ef630800000000000000
+      internalID: 3962725233080083779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_75
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 31
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b24f83a81b4b1c660800000000000000
+      internalID: 7404397936995005483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_76
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 31
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ef0cb72b252b920800000000000000
+      internalID: 3004554827943444023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_77
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 31
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fbf2f161620c1e0800000000000000
+      internalID: -2179700343192961210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_78
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 31
+        width: 6
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea9a2e6a4351dc930800000000000000
+      internalID: 4165008546269931950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_79
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 31
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3816f6ec49fb94e0800000000000000
+      internalID: -1973709902984112066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_80
+      rect:
+        serializedVersion: 2
+        x: 130
+        y: 31
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1f99d891f91a2590800000000000000
+      internalID: -7698312087594229985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_81
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 31
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 469161cf05cbce490800000000000000
+      internalID: -7715585005579789980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_82
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 31
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6dbb3dee42f2c580800000000000000
+      internalID: -8808211500381782674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_83
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 31
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae5487423217f6db0800000000000000
+      internalID: -4796490682376632854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_84
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 0
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83a978a3536bb81b0800000000000000
+      internalID: -5653224567502038472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_85
+      rect:
+        serializedVersion: 2
+        x: 21
+        y: 0
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0203e999eefe33a0800000000000000
+      internalID: -6683624517708611062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_86
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 0
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e69b6227ba9ffc3b0800000000000000
+      internalID: -5489894905991480978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_87
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 0
+        width: 10
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 470a8fb2d3aff3f50800000000000000
+      internalID: 6863479497773588596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_88
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 0
+        width: 9
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 25578b5724bea1c20800000000000000
+      internalID: 3178111157738698066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_89
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 0
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d16d050e5543a0c0800000000000000
+      internalID: -4565729327109545520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_90
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 826e97f6510207810800000000000000
+      internalID: 1760942730738525736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_91
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 0
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 26dce0e5300a71560800000000000000
+      internalID: 7284466858618441058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_92
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 0
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db574cd3a7063e850800000000000000
+      internalID: 6405069173189539261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_93
+      rect:
+        serializedVersion: 2
+        x: 147
+        y: 0
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a4b2e26a8436c1660800000000000000
+      internalID: 7357865054893386570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_94
+      rect:
+        serializedVersion: 2
+        x: 163
+        y: 0
+        width: 8
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96e9618cff39d1b10800000000000000
+      internalID: 1953880540131532393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pink_95
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 0
+        width: 7
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d4a10be5f47e3180800000000000000
+      internalID: -9133734394702224175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pink_0: -7381184880430962403
+      Pink_1: 139881317523503543
+      Pink_10: -942109970077638612
+      Pink_11: -845820854023452326
+      Pink_12: -3702374633614268465
+      Pink_13: -2576162496561395546
+      Pink_14: 3903090132030290891
+      Pink_15: -1070786133750771281
+      Pink_16: -2861354452907581786
+      Pink_17: 3472590331781178929
+      Pink_18: 2923636594288005845
+      Pink_19: -5663252365120651252
+      Pink_2: -2698069653466453940
+      Pink_20: 3396489723399940345
+      Pink_21: -4558251795355019679
+      Pink_22: 134833331926615786
+      Pink_23: 4260375011821521710
+      Pink_24: 4707978725416701449
+      Pink_25: 221569070702146843
+      Pink_26: 6500171455524716412
+      Pink_27: -9032790855149585028
+      Pink_28: -7315496754983333527
+      Pink_29: -6223115515978540675
+      Pink_3: -3962920276799938668
+      Pink_30: -5707730366462450929
+      Pink_31: -7287695720372602663
+      Pink_32: -2568107558662682153
+      Pink_33: 6126479412735558834
+      Pink_34: -1326196376255646321
+      Pink_35: -5639224571496366744
+      Pink_36: -4366833975737877004
+      Pink_37: 7001283196855539318
+      Pink_38: 7069602862040033984
+      Pink_39: 8797028406639109315
+      Pink_4: 6815019005497079155
+      Pink_40: -5136396875290005054
+      Pink_41: -4800327501244115620
+      Pink_42: 8920061084629153414
+      Pink_43: -9199339993519372603
+      Pink_44: 6563712326625123996
+      Pink_45: 4541344482109046075
+      Pink_46: 4931628397042228236
+      Pink_47: 773445571042289599
+      Pink_48: -5693590856633982473
+      Pink_49: 3069724684545169765
+      Pink_5: 4966520737234555678
+      Pink_50: 3134657573762994905
+      Pink_51: 7099107548772064380
+      Pink_52: 3911385595640394473
+      Pink_53: 6879314662389689575
+      Pink_54: 752257392423218140
+      Pink_55: -5904796082694008940
+      Pink_56: -4621221662940943214
+      Pink_57: -1526078477136729637
+      Pink_58: -4860840777343632814
+      Pink_59: 7131342328215491418
+      Pink_6: -2993699658363159222
+      Pink_60: 7225865384656489529
+      Pink_61: 529314322927141975
+      Pink_62: 5411161169177938348
+      Pink_63: 3256163096714996773
+      Pink_64: -5879074442745022680
+      Pink_65: -4723799784403066753
+      Pink_66: 780368323778425130
+      Pink_67: -2070996238139599271
+      Pink_68: -3431299774529374178
+      Pink_69: -1827747588767561229
+      Pink_7: -4353293926914191365
+      Pink_70: -3510841285758826685
+      Pink_71: 7358373070792944074
+      Pink_72: 9148273826152520818
+      Pink_73: -4983467575604466865
+      Pink_74: 3962725233080083779
+      Pink_75: 7404397936995005483
+      Pink_76: 3004554827943444023
+      Pink_77: -2179700343192961210
+      Pink_78: 4165008546269931950
+      Pink_79: -1973709902984112066
+      Pink_8: 2451925445430609146
+      Pink_80: -7698312087594229985
+      Pink_81: -7715585005579789980
+      Pink_82: -8808211500381782674
+      Pink_83: -4796490682376632854
+      Pink_84: -5653224567502038472
+      Pink_85: -6683624517708611062
+      Pink_86: -5489894905991480978
+      Pink_87: 6863479497773588596
+      Pink_88: 3178111157738698066
+      Pink_89: -4565729327109545520
+      Pink_9: 2597259338202843451
+      Pink_90: 1760942730738525736
+      Pink_91: 7284466858618441058
+      Pink_92: 6405069173189539261
+      Pink_93: 7357865054893386570
+      Pink_94: 1953880540131532393
+      Pink_95: -9133734394702224175
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
