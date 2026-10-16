@@ -124,8 +124,8 @@ public sealed class DiveSceneTransition : MonoBehaviour
         BuildEffects();
         SetCoverAlpha(0f);
 
-        // // Sceneの切り替え後もCanvasとCoroutineを維持する。
-        // DontDestroyOnLoad(gameObject);
+        // Sceneの切り替え後もCanvasとCoroutineを維持する。
+        DontDestroyOnLoad(gameObject);
 
         if (_diveSE != null && _diveSE.clip != null)
         {
