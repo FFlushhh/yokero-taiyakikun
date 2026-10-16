@@ -1,62 +1,41 @@
-
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Serialization;
 using Yokero.Collision;
 
 /// <summary>
-/// プレイヤーの位置・回転制御（マウス追従）
-///
-/// 【主な機能】
-/// - マウス座標への追従
-/// - 移動方向に応じた回転・左右反転
-/// - 画面外への移動制限
-/// - GameManagerからの操作有効・無効制御
-/// - 高速移動時のすり抜け対策（T01）
-///
-/// 【T01の変更】
-/// 移動先に直接ワープする前に、Collider2D.Castを使用して
-/// 移動経路上に敵が存在するかを検査する。
+/// マウス追従・画面内制限・高速移動の経路衝突判定を維持しつつ、
+/// 実際に実行する移動方向へプレイヤーを向ける
+/// 既存 PlayerController.cs の置き換え版（同名ファイルを上書きし、既存.metaを維持）
 /// </summary>
 public class PlayerController : MonoBehaviour
 {
     [Header("Camera")]
-    public Camera mainCamera;
+    [FormerlySerializedAs("mainCamera")]
+    [SerializeField] private Camera _mainCamera;
 
     [Header("Rotation Settings")]
-    [SerializeField]
-    private float _rotationThreshold = 0.0003f;
+    [SerializeField, Min(0f)] private float _rotationThreshold = 0.0003f;
+
+    [Header("Visual Bounds")]
+    [Tooltip("Player/Visual の SpriteRenderer。画面外へのはみ出し防止に使用する。")]
+    [SerializeField] private SpriteRenderer _visualSpriteRenderer;
 
     [Header("Collision Settings (T01)")]
-    [SerializeField]
-    private Collider2D _collisionCollider;
+    [SerializeField] private Collider2D _collisionCollider;
+    [SerializeField] private PlayerCollision _playerCollision;
 
-    [SerializeField]
-    private PlayerCollision _playerCollision;
-
-    // 前フレームのマウスワールド座標
     private Vector3 _lastMouseWorldPos;
-
-    // プレイヤーのSpriteRenderer
-    private SpriteRenderer _spriteRenderer;
-
-    // 左右反転時に元の大きさを維持するための初期スケール
     private Vector3 _initialScale;
+    private bool _movementEnabled = true;
 
-    // GameManagerから操作を制御するためのフラグ
-    private bool movementEnabled = true;
+    // Cast結果を使い回し、毎フレームの割り当てを避ける（既存仕様）
+    private readonly List<RaycastHit2D> _castResults = new List<RaycastHit2D>(16);
 
-    // Cast結果を再利用し、毎フレームのメモリ確保を抑える
-    private readonly List<RaycastHit2D> _castResults =
-        new List<RaycastHit2D>(16);
-
-    /// <summary>
-    /// GameManagerからプレイヤー操作の有効・無効を設定する。
-    /// </summary>
     public void SetMovementEnabled(bool enabled)
     {
-        movementEnabled = enabled;
-
+        _movementEnabled = enabled;
         if (!enabled)
         {
             _lastMouseWorldPos = transform.position;
@@ -65,28 +44,20 @@ public class PlayerController : MonoBehaviour
 
     private void Start()
     {
-        // Main Cameraの取得
-        if (mainCamera == null)
+        if (_mainCamera == null)
         {
-            mainCamera = Camera.main;
+            _mainCamera = Camera.main;
         }
 
-        if (mainCamera == null)
+        if (_mainCamera == null)
         {
-            Debug.LogError(
-                "PlayerController: Main Cameraが見つかりません。",
-                this
-            );
+            Debug.LogError("PlayerController: Main Cameraが見つかりません。", this);
+            _movementEnabled = false;
             return;
         }
 
-        // SpriteRendererの取得
-        _spriteRenderer = GetComponent<SpriteRenderer>();
-
-        // 初期スケールを保持
         _initialScale = transform.localScale;
 
-        // T01：衝突判定用Componentの取得
         if (_collisionCollider == null)
         {
             _collisionCollider = GetComponent<CapsuleCollider2D>();
@@ -97,45 +68,44 @@ public class PlayerController : MonoBehaviour
             _playerCollision = GetComponent<PlayerCollision>();
         }
 
-        if (_collisionCollider == null || _playerCollision == null)
+        if (_visualSpriteRenderer == null)
         {
-            Debug.LogError(
-                "PlayerController: T01の衝突判定に必要なComponentがありません。",
-                this
-            );
-
-            // 衝突判定のない状態で操作させない
-            movementEnabled = false;
+            // Player本体の空SpriteRendererを拾わないよう、子から探す
+            SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
+            foreach (SpriteRenderer renderer in renderers)
+            {
+                if (renderer.gameObject != gameObject && renderer.sprite != null)
+                {
+                    _visualSpriteRenderer = renderer;
+                    break;
+                }
+            }
         }
 
-        // 初期のマウス位置を取得
-        Vector2 mouseScreenPos = Vector2.zero;
+        if (_collisionCollider == null || _playerCollision == null)
+        {
+            Debug.LogError("PlayerController: T01の衝突判定に必要なComponentがありません。", this);
+            _movementEnabled = false;
+        }
 
+        Vector2 mouseScreenPos = Vector2.zero;
         if (Mouse.current != null)
         {
             mouseScreenPos = Mouse.current.position.ReadValue();
         }
 
-        float camDistance =
-            Mathf.Abs(mainCamera.transform.position.z);
-
-        _lastMouseWorldPos = mainCamera.ScreenToWorldPoint(
-            new Vector3(
-                mouseScreenPos.x,
-                mouseScreenPos.y,
-                camDistance
-            )
-        );
+        float camDistance = Mathf.Abs(_mainCamera.transform.position.z);
+        _lastMouseWorldPos = _mainCamera.ScreenToWorldPoint(
+            new Vector3(mouseScreenPos.x, mouseScreenPos.y, camDistance));
     }
 
     private void Update()
     {
-        // 操作が無効な場合は処理しない
-        if (!movementEnabled) return;
-        if (mainCamera == null) return;
-        if (Mouse.current == null) return;
+        if (!_movementEnabled || _mainCamera == null || Mouse.current == null)
+        {
+            return;
+        }
 
-        // ゲームオーバー後は操作させない
         if (_playerCollision != null &&
             _playerCollision.gameManager != null &&
             _playerCollision.gameManager.GameOver)
@@ -143,139 +113,81 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        // ----------------------------------------
-        // 1. マウス座標をワールド座標に変換
-        // ----------------------------------------
+        Vector2 mouseScreenPos = Mouse.current.position.ReadValue();
+        float camDistance = Mathf.Abs(_mainCamera.transform.position.z);
 
-        Vector2 mouseScreenPos =
-            Mouse.current.position.ReadValue();
+        Vector3 currentMouseWorldPos = _mainCamera.ScreenToWorldPoint(
+            new Vector3(mouseScreenPos.x, mouseScreenPos.y, camDistance));
 
-        float camDistance =
-            Mathf.Abs(mainCamera.transform.position.z);
+        // マウスの前回座標はGameManagerとの互換性のため保持する
+        // 向きの判定には使わない（画面端などで実移動と異なるため）
+        _lastMouseWorldPos = currentMouseWorldPos;
 
-        Vector3 currentMouseWorldPos =
-            mainCamera.ScreenToWorldPoint(
-                new Vector3(
-                    mouseScreenPos.x,
-                    mouseScreenPos.y,
-                    camDistance
-                )
-            );
+        // カメラの表示領域と表示Sprite/Colliderのサイズから移動先を制限する
+        Vector3 min = _mainCamera.ViewportToWorldPoint(
+            new Vector3(0f, 0f, camDistance));
+        Vector3 max = _mainCamera.ViewportToWorldPoint(
+            new Vector3(1f, 1f, camDistance));
 
-        // ----------------------------------------
-        // 2. 移動方向に応じた回転・左右反転
-        // ----------------------------------------
-
-        Vector3 mouseDelta =
-            currentMouseWorldPos - _lastMouseWorldPos;
-
-        if (mouseDelta.sqrMagnitude > _rotationThreshold)
+        float halfWidth = 0f;
+        float halfHeight = 0f;
+        if (_visualSpriteRenderer != null)
         {
-            // マウス移動方向から角度を計算
-            float angle =
-                Mathf.Atan2(mouseDelta.y, mouseDelta.x)
-                * Mathf.Rad2Deg;
+            halfWidth = _visualSpriteRenderer.bounds.extents.x;
+            halfHeight = _visualSpriteRenderer.bounds.extents.y;
+        }
 
-            // 左方向に移動するときは左右反転
+        if (_collisionCollider != null)
+        {
+            halfWidth = Mathf.Max(halfWidth, _collisionCollider.bounds.extents.x);
+            halfHeight = Mathf.Max(halfHeight, _collisionCollider.bounds.extents.y);
+        }
+
+        Vector3 targetPos = currentMouseWorldPos;
+        targetPos.x = Mathf.Clamp(targetPos.x, min.x + halfWidth, max.x - halfWidth);
+        targetPos.y = Mathf.Clamp(targetPos.y, min.y + halfHeight, max.y - halfHeight);
+        targetPos.z = transform.position.z;
+
+        // 「画面内に制限された移動先」への実変位を進行方向に採用する
+        Vector2 movement = (Vector2)(targetPos - transform.position);
+
+        // 既存T01: 実際に移動する前に移動経路上の敵を検査
+        if (_collisionCollider != null && _playerCollision != null)
+        {
+            bool hitEnemy = PlayerPathCollision2D.HitsEnemy(
+                _collisionCollider, movement, _castResults);
+            if (hitEnemy)
+            {
+                _playerCollision.ReportEnemyHit();
+                return;
+            }
+        }
+
+        // プレイヤー本体を従来どおり回転・反転し、既存のColliderの
+        // 姿勢も描画方向と一緒に変える。Animatorは子VisualのSpriteだけを更新する
+        if (movement.sqrMagnitude > _rotationThreshold)
+        {
+            float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
             bool facingLeft = Mathf.Abs(angle) > 90f;
-
             Vector3 scale = _initialScale;
-
-            scale.x = facingLeft
-                ? -Mathf.Abs(scale.x)
-                : Mathf.Abs(scale.x);
-
+            scale.x = facingLeft ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
             transform.localScale = scale;
 
-            // 左右反転に合わせて角度を補正
             if (facingLeft)
             {
                 angle += 180f;
             }
 
-            transform.rotation =
-                Quaternion.Euler(0f, 0f, angle);
+            transform.rotation = Quaternion.Euler(0f, 0f, angle);
         }
-
-        _lastMouseWorldPos = currentMouseWorldPos;
-
-        // ----------------------------------------
-        // 3. 画面外への移動制限
-        // ----------------------------------------
-
-        float halfWidth = 0f;
-        float halfHeight = 0f;
-
-        if (_spriteRenderer != null)
-        {
-            halfWidth = _spriteRenderer.bounds.extents.x;
-            halfHeight = _spriteRenderer.bounds.extents.y;
-        }
-
-        Vector3 min = mainCamera.ViewportToWorldPoint(
-            new Vector3(0f, 0f, camDistance)
-        );
-
-        Vector3 max = mainCamera.ViewportToWorldPoint(
-            new Vector3(1f, 1f, camDistance)
-        );
-
-        // 最終的な移動目標位置
-        Vector3 targetPos = currentMouseWorldPos;
-
-        targetPos.x = Mathf.Clamp(
-            targetPos.x,
-            min.x + halfWidth,
-            max.x - halfWidth
-        );
-
-        targetPos.y = Mathf.Clamp(
-            targetPos.y,
-            min.y + halfHeight,
-            max.y - halfHeight
-        );
-
-        // Z座標は現在の値を維持
-        targetPos.z = transform.position.z;
-
-        // ----------------------------------------
-        // 4. T01：移動経路上の敵との衝突判定
-        // ----------------------------------------
-
-        // 現在位置から移動先までの変位
-        Vector2 movement =
-            (Vector2)(targetPos - transform.position);
-
-        if (_collisionCollider != null &&
-            _playerCollision != null)
-        {
-            bool hitEnemy =
-                PlayerPathCollision2D.HitsEnemy(
-                    _collisionCollider,
-                    movement,
-                    _castResults
-                );
-
-            if (hitEnemy)
-            {
-                // 既存のゲームオーバー処理を呼ぶ
-                _playerCollision.ReportEnemyHit();
-
-                // 衝突した場合は移動しない
-                return;
-            }
-        }
-
-        // ----------------------------------------
-        // 5. 衝突しなければ移動
-        // ----------------------------------------
+        // movement がほぼゼロならTransformを変更せず直前の向きを維持
 
         transform.position = targetPos;
     }
 
     /// <summary>
-    /// GameManagerがプレイヤーをワープさせた際などに、
-    /// 前フレームのマウス座標を補正する。
+    /// 旧GameManagerの呼び出しとの互換性を維持する
+    /// 向きはカーソルの差分ではなく実移動から計算する
     /// </summary>
     public void SetLastMouseWorldPos(Vector3 worldPos)
     {
