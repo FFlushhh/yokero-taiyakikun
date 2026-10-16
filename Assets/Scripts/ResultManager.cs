@@ -35,38 +35,28 @@ public class ResultManager : MonoBehaviour
     private float lastTime;       // 今回の生存時間
     private float[] ranks = new float[5]; // 上位5位のランキング
     private int newRankIndex = -1;        // 今回のプレイで更新された順位（-1=なし）
+    
+    private bool _presentationStarted;
 
-    /// <summary>
-    /// 初期化処理
-    /// - 生存時間取得
-    /// - ランキング読み込み・更新
-    /// - コルーチンで順番に表示
-    /// - BGM再生
-    /// </summary>
-    private void Start()
+    private void Awake()
     {
-        // 前回プレイの生存時間を取得
-        lastTime = PlayerPrefs.GetFloat("LastSurvivalTime", 0f);
-        survivalTimeText.text = $"Survival Time: {lastTime:F2}s";
+        // 前回プレイの生存時間を取得する。
+        lastTime = PlayerPrefs.GetFloat(
+            "LastSurvivalTime",
+            0f);
 
-        // UI 初期非表示
+        survivalTimeText.text =
+            $"Survival Time: {lastTime:F2}s";
+
+        // フェード解除が完了するまで結果UIを表示しない。
+        survivalTimeText.gameObject.SetActive(false);
         rankingText.gameObject.SetActive(false);
         retryButton.gameObject.SetActive(false);
         backToTitleButton.gameObject.SetActive(false);
 
-        // ランキング読み込み・更新
+        // ランキングの計算・保存処理は既存仕様を維持する。
         LoadRanking();
         UpdateRanking();
-
-        // コルーチンで順番に結果表示
-        StartCoroutine(ShowResultSequence());
-
-        // BGM再生
-        if (_bgm != null)
-        {
-            _bgm.loop = true;
-            _bgm.Play();
-        }
     }
 
     // /// <summary>
@@ -80,6 +70,32 @@ public class ResultManager : MonoBehaviour
     //     }
     // }
 
+    /// <summary>
+    /// Scene遷移演出が完了した後に結果表示を開始する。
+    /// </summary>
+    public void BeginResultPresentation()
+    {
+        if (_presentationStarted)
+        {
+            return;
+        }
+
+        _presentationStarted = true;
+
+        // 生存時間を表示する。
+        survivalTimeText.gameObject.SetActive(true);
+
+        // 既存のランキング・ボタン表示シーケンスを開始する。
+        StartCoroutine(ShowResultSequence());
+
+        // リザルトBGMを開始する。
+        if (_bgm != null)
+        {
+            _bgm.loop = true;
+            _bgm.Play();
+        }
+    }
+    
     /// <summary>
     /// PlayerPrefsからランキングを読み込む
     /// </summary>
