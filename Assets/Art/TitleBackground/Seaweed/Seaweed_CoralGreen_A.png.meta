@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: d6dd06d4e48daa44da5ffefd1bb1f47f
+guid: b02dd10810076e042aa4555685e19273
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4045726242882849107
-    second: Blue and White Illustrative Trivia Quiz Presentation_0
+      213: 5419203681123487036
+    second: Seaweed_CoralGreen_A_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -46,17 +46,19 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
+  alignment: 7
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
+  spriteTessellationMethod: 0
   spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -72,7 +74,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -96,30 +98,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Blue and White Illustrative Trivia Quiz Presentation_0
+      name: Seaweed_CoralGreen_A_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1920
-        height: 1080
+        x: 11
+        y: 11
+        width: 486
+        height: 572
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,8 +117,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 359028d259e452830800000000000000
-      internalID: 4045726242882849107
+      spriteID: c3dcada2901e43b40800000000000000
+      internalID: 5419203681123487036
       vertices: []
       indices: 
       edges: []
@@ -138,7 +127,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +137,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Blue and White Illustrative Trivia Quiz Presentation_0: 4045726242882849107
+      Seaweed_CoralGreen_A_0: 5419203681123487036
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
