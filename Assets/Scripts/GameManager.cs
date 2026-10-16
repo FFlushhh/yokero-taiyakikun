@@ -44,38 +44,90 @@ public class GameManager : MonoBehaviour
     private Camera _mainCamera;
     private PlayerController _playerController;
 
-    void Start()
+    private void Awake()
     {
+        _mainCamera = Camera.main;
+
+        if (_mainCamera == null || player == null)
+        {
+            Debug.LogWarning(
+                "GameManager: PlayerまたはMain Cameraが見つかりません。",
+                this);
+
+            return;
+        }
+
+        // MainSceneが最初に描画される前に、
+        // プレイヤーを画面左端の外へ配置する。
+        float cameraDistance = Mathf.Abs(
+            _mainCamera.transform.position.z - player.position.z);
+
+        Vector3 leftCenterWorld = _mainCamera.ViewportToWorldPoint(
+            new Vector3(0f, 0.5f, cameraDistance));
+
+        float startX =
+            leftCenterWorld.x - entranceOffscreenMargin;
+
+        player.position = new Vector3(
+            startX,
+            leftCenterWorld.y,
+            player.position.z);
+    }
+    
+    private IEnumerator Start()
+    {
+        _mainCamera = Camera.main;
+
+        // プレイヤーのControllerを取得する。
+        if (player != null)
+        {
+            _playerController =
+                player.GetComponent<PlayerController>();
+
+            if (_playerController == null)
+            {
+                Debug.LogWarning(
+                    "GameManager: PlayerControllerが見つかりません。",
+                    this);
+            }
+        }
+        else
+        {
+            Debug.LogWarning(
+                "GameManager: playerが未設定です。",
+                this);
+        }
+
+        // 初期状態ではプレイヤーを操作できないようにする。
+        if (_playerController != null)
+        {
+            _playerController.SetMovementEnabled(false);
+        }
+
+        if (readyText != null)
+        {
+            readyText.text = "";
+        }
+
+        // 水中ダイブ演出が終了するまで待機する。
+        // MainSceneを直接実行した場合は待機しない。
+        while (DiveSceneTransition.IsTransitioning)
+        {
+            yield return null;
+        }
+
+        // 新しいゲーム開始時の時間設定を正常化する。
+        Time.timeScale = 1f;
+
+        // 既存のBGM再生処理。
         if (_bgm != null)
         {
             _bgm.loop = true;
             _bgm.Play();
         }
 
-        _mainCamera = Camera.main;
-
-        // プレイヤーの PlayerController を取得（Inspector の player をセットしておくこと）
-        if (player != null)
-        {
-            _playerController = player.GetComponent<PlayerController>();
-            if (_playerController == null)
-                Debug.LogWarning("GameManager: player に PlayerController がアタッチされていません。");
-        }
-        else
-        {
-            Debug.LogWarning("GameManager: player が未設定です。");
-        }
-
-        // 初期状態: ゲーム未開始にしてプレイヤー操作を無効にする
-        if (_playerController != null)
-            _playerController.SetMovementEnabled(false);
-
-        // readyText は最初空・非表示にしておく
-        if (readyText != null)
-            readyText.text = "";
-
-        // プレゲームシーケンス開始
-        StartCoroutine(PreStartSequence());
+        // フェードイン完了後、既存の登場演出を開始する。
+        yield return StartCoroutine(PreStartSequence());
     }
 
     void Update()
@@ -127,9 +179,6 @@ public class GameManager : MonoBehaviour
         float startX = leftCenterWorld.x - entranceOffscreenMargin;
         Vector3 startPos = new Vector3(startX, leftCenterWorld.y, player.position.z);
         Vector3 targetPos = new Vector3(centerWorld.x, centerWorld.y, player.position.z);
-
-        // 即座に startPos に置く（登場アニメはここから開始）
-        player.position = startPos;
 
         // 移動：左端から中央へ一定速度で移動
         while (Vector3.Distance(player.position, targetPos) > 0.01f)
