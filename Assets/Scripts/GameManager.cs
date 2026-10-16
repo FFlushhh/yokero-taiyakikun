@@ -30,6 +30,9 @@ public class GameManager : MonoBehaviour
     [Header("Game Settings")]
     public float forcedEndTime = 180f; // 3分で強制終了
     public float debugStartTime = 0f;   // デバッグ用：経過時間の初値
+    
+    [Header("Game Over Transition")]
+    [SerializeField] private GameOverTransition _gameOverTransition;
 
     private float _startTime;
     private bool _gameOver = false;
@@ -269,24 +272,64 @@ public class GameManager : MonoBehaviour
     }
 
     /// <summary>
-    /// プレイヤーが敵と衝突したときに呼ぶ（PlayerCollision から呼ばれる）
+    /// プレイヤーが敵に衝突した際のゲームオーバー処理。
+    /// 生存時間を確定・保存し、ゲーム進行を停止して演出を開始する。
     /// </summary>
     public void PlayerHit()
     {
-        if (_gameOver) return;
+        // 衝突判定が複数回発生しても処理は1回だけ。
+        if (_gameOver)
+        {
+            return;
+        }
 
         _gameOver = true;
-        float survivalTime = (_gameStarted) ? Time.time - _startTime : 0f;
 
-        // データ保存
+        // 衝突が確定した瞬間の生存時間を保存する。
+        float survivalTime = _gameStarted
+            ? Time.time - _startTime
+            : 0f;
+
         PlayerPrefs.SetFloat("LastSurvivalTime", survivalTime);
         PlayerPrefs.Save();
 
-        // BGM停止（音が残らないように）
-        if (_bgm != null) _bgm.Stop();
+        // プレイヤー操作を停止する。
+        if (_playerController != null)
+        {
+            _playerController.SetMovementEnabled(false);
+        }
 
-        // リザルトシーンへ遷移
-        SceneManager.LoadScene("ResultScene");
+        // 既に出現している敵の移動を停止する。
+        // 新しい敵の生成は、既存EnemySpawnerのGameOver判定で停止する。
+        EnemyController[] enemies =
+            FindObjectsByType<EnemyController>(
+                FindObjectsSortMode.None);
+
+        foreach (EnemyController enemy in enemies)
+        {
+            enemy.enabled = false;
+        }
+
+        // ゲームBGMを停止する。
+        if (_bgm != null)
+        {
+            _bgm.Stop();
+        }
+
+        // Sceneへ即時遷移せず、ゲームオーバー演出を開始する。
+        if (_gameOverTransition != null)
+        {
+            _gameOverTransition.Play();
+        }
+        else
+        {
+            // 参照漏れがあってもゲーム進行が止まったままにならないようにする。
+            Debug.LogError(
+                "GameManager: GameOverTransitionが未設定です。",
+                this);
+
+            SceneManager.LoadScene("ResultScene");
+        }
     }
 
     /// <summary>
