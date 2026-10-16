@@ -23,6 +23,9 @@ public class ResultManager : MonoBehaviour
     public Button retryButton;            // リトライボタン
     public Button backToTitleButton;      // タイトルへ戻るボタン
 
+    [Header("Scene Transition")]
+    [SerializeField] private DiveSceneTransition _diveTransition;
+    
     [Header("Sequence Timing (seconds)")]
     public float showRankingDelay = 1.5f; // 生存時間表示からランキング表示までの待機時間
     public float showButtonsDelay = 1.0f; // ランキング表示からボタン表示までの待機時間
@@ -201,23 +204,25 @@ public class ResultManager : MonoBehaviour
     /// </summary>
     public void Retry()
     {
-        if (_startSound != null)
+        if (_diveTransition == null)
+        {
+            Debug.LogError(
+                "ResultManager: DiveSceneTransitionが未設定です。",
+                this);
+
+            return;
+        }
+
+        if (!_diveTransition.TryPlayToMainScene(_bgm))
+        {
+            return;
+        }
+
+        // 既存のボタン操作SEを維持する。
+        if (_startSound != null && _startSound.clip != null)
         {
             _startSound.Play();
-            Invoke(nameof(LoadMainScene), _startSound.clip.length - 1.5f);
         }
-        else
-        {
-            LoadMainScene();
-        }
-    }
-
-    /// <summary>
-    /// MainSceneロード処理
-    /// </summary>
-    private void LoadMainScene()
-    {
-        SceneManager.LoadScene("MainScene");
     }
 
     /// <summary>

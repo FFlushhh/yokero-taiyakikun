@@ -10,6 +10,10 @@ using System.Collections;
 /// </summary>
 public class TitleManager : MonoBehaviour
 {
+    [Header("Scene Transition")]
+    [SerializeField] private DiveSceneTransition _diveTransition;
+    
+    [Header("Audio Source")]
     [SerializeField] private AudioSource _bgm;
     [SerializeField] private AudioSource _startSound;
 
@@ -23,39 +27,28 @@ public class TitleManager : MonoBehaviour
         }
     }
 
-    /// <summary>
-    /// UI ボタン等から呼び出す：ゲーム開始処理
-    /// - スタート音があれば再生してからシーン遷移（元実装通り）
-    /// </summary>
     public void StartGame()
     {
+        if (_diveTransition == null)
+        {
+            Debug.LogError(
+                "TitleManager: DiveSceneTransitionが未設定です。",
+                this);
+
+            return;
+        }
+
+        // 共通トランジションの開始に成功した場合のみSEを再生する。
+        if (!_diveTransition.TryPlayToMainScene(_bgm))
+        {
+            return;
+        }
+
+        // 既存のボタン操作SEを維持する。
         if (_startSound != null && _startSound.clip != null)
         {
-            StartCoroutine(PlayStartAndLoadScene());
+            _startSound.Play();
         }
-        else
-        {
-            LoadMainScene();
-        }
-    }
-
-    /// <summary>
-    /// スタート音を再生してからメインシーンへ遷移するコルーチン
-    /// </summary>
-    private IEnumerator PlayStartAndLoadScene()
-    {
-        _startSound.Play();
-        float waitTime = Mathf.Max(0f, _startSound.clip.length - 1.5f);
-        yield return new WaitForSeconds(waitTime);
-        LoadMainScene();
-    }
-
-    /// <summary>
-    /// MainScene をロードするヘルパー（Invoke 用）
-    /// </summary>
-    private void LoadMainScene()
-    {
-        SceneManager.LoadScene("MainScene");
     }
 
     /// <summary>
