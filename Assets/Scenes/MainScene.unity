@@ -1474,7 +1474,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameOverTransition
   _fadeImage: {fileID: 748723335}
-  _failureText: {fileID: 0}
   _gameOverSE: {fileID: 508363452}
   _fadeDuration: 1
   _transitionDuration: 2.5
@@ -2139,6 +2138,7 @@ MonoBehaviour:
   _visualSpriteRenderer: {fileID: 106807484}
   _collisionCollider: {fileID: 1725882410}
   _playerCollision: {fileID: 1725882405}
+  _edgeMarginViewport: 0.02
 --- !u!212 &1725882402
 SpriteRenderer:
   serializedVersion: 3
@@ -2353,7 +2353,7 @@ PolygonCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
