@@ -48,23 +48,20 @@ public class PlayerPathCollision2DTests
     [TearDown]
     public void TearDown()
     {
-        // テスト用オブジェクトを無効化して破棄する
+        // EditModeではGameObjectを即座に破棄する。
         if (player != null)
         {
-            player.SetActive(false);
-            Object.Destroy(player);
+            Object.DestroyImmediate(player);
         }
 
         if (enemy != null)
         {
-            enemy.SetActive(false);
-            Object.Destroy(enemy);
+            Object.DestroyImmediate(enemy);
         }
 
         if (obstacle != null)
         {
-            obstacle.SetActive(false);
-            Object.Destroy(obstacle);
+            Object.DestroyImmediate(obstacle);
         }
 
         results.Clear();
