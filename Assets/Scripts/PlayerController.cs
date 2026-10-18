@@ -26,6 +26,11 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private Collider2D _collisionCollider;
     [SerializeField] private PlayerCollision _playerCollision;
 
+    [Header("Screen Edge Settings")]
+    [Tooltip("画面端からの余白。0ならプレイヤーの中心が画面端まで移動可能。")]
+    [SerializeField, Range(0f, 0.1f)]
+    private float _edgeMarginViewport = 0.02f;
+
     private Vector3 _lastMouseWorldPos;
     private Vector3 _initialScale;
     private bool _movementEnabled = true;
@@ -123,30 +128,26 @@ public class PlayerController : MonoBehaviour
         // 向きの判定には使わない（画面端などで実移動と異なるため）
         _lastMouseWorldPos = currentMouseWorldPos;
 
-        // カメラの表示領域と表示Sprite/Colliderのサイズから移動先を制限する
-        Vector3 min = _mainCamera.ViewportToWorldPoint(
-            new Vector3(0f, 0f, camDistance));
-        Vector3 max = _mainCamera.ViewportToWorldPoint(
-            new Vector3(1f, 1f, camDistance));
+    // 画面端から一定割合の余白を確保する。
+    // 魚の回転角度に左右されない移動範囲を使用する。
+    Vector3 min = _mainCamera.ViewportToWorldPoint(
+        new Vector3(
+            _edgeMarginViewport,
+            _edgeMarginViewport,
+            camDistance));
 
-        float halfWidth = 0f;
-        float halfHeight = 0f;
-        if (_visualSpriteRenderer != null)
-        {
-            halfWidth = _visualSpriteRenderer.bounds.extents.x;
-            halfHeight = _visualSpriteRenderer.bounds.extents.y;
-        }
+    Vector3 max = _mainCamera.ViewportToWorldPoint(
+        new Vector3(
+            1f - _edgeMarginViewport,
+            1f - _edgeMarginViewport,
+            camDistance));
 
-        if (_collisionCollider != null)
-        {
-            halfWidth = Mathf.Max(halfWidth, _collisionCollider.bounds.extents.x);
-            halfHeight = Mathf.Max(halfHeight, _collisionCollider.bounds.extents.y);
-        }
+    // マウス位置を、固定された移動可能範囲に制限する。
+    Vector3 targetPos = currentMouseWorldPos;
 
-        Vector3 targetPos = currentMouseWorldPos;
-        targetPos.x = Mathf.Clamp(targetPos.x, min.x + halfWidth, max.x - halfWidth);
-        targetPos.y = Mathf.Clamp(targetPos.y, min.y + halfHeight, max.y - halfHeight);
-        targetPos.z = transform.position.z;
+    targetPos.x = Mathf.Clamp(targetPos.x, min.x, max.x);
+    targetPos.y = Mathf.Clamp(targetPos.y, min.y, max.y);
+    targetPos.z = transform.position.z;
 
         // 「画面内に制限された移動先」への実変位を進行方向に採用する
         Vector2 movement = (Vector2)(targetPos - transform.position);
