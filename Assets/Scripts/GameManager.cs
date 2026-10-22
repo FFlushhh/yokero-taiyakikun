@@ -41,6 +41,15 @@ public class GameManager : MonoBehaviour
     private bool _gameStarted = false;
     public bool GameStarted => _gameStarted;
 
+    /// <summary>
+    /// ゲーム開始後の経過時間を秒単位で取得する
+    /// 開始前は0秒を返す。
+    /// </summary>
+    public float ElapsedGameTime =>
+        _gameStarted
+            ? Mathf.Max(0f, Time.time - _startTime)
+            : 0f;
+
     private Camera _mainCamera;
     private PlayerController _playerController;
 
