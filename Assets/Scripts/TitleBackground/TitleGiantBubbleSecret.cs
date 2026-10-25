@@ -74,6 +74,26 @@ public sealed class TitleGiantBubbleSecret :
     [SerializeField, Range(0f, 1f)]
     private float _farAlphaMultiplier = 0.75f;
 
+    [Header("Burst VFX")]
+    [SerializeField] private ParticleSystem _burstParticles;
+    [SerializeField] private Camera _burstCamera;
+
+    [SerializeField, Range(1, 32)]
+    private int _burstParticleCount = 12;
+
+    [SerializeField, Range(0.5f, 1f)]
+    private float _burstRadiusMultiplier = 0.85f;
+
+    [SerializeField, Min(0f)]
+    private float _burstMinSpeed = 1.1f;
+
+    [SerializeField, Min(0f)]
+    private float _burstMaxSpeed = 2.2f;
+
+    [SerializeField, Min(0f)]
+    private float _burstUpwardSpeed = 0.45f;
+
+    
     [Header("Optional Sounds")]
     [SerializeField] private AudioClip _hitSound;
     [SerializeField] private AudioClip _breakSound;
@@ -133,6 +153,11 @@ public sealed class TitleGiantBubbleSecret :
             _bubbleVisual != gameObject)
         {
             _bubbleVisual.SetActive(false);
+        }
+        
+        if (_burstCamera == null)
+        {
+            _burstCamera = Camera.main;
         }
     }
 
@@ -368,10 +393,14 @@ public sealed class TitleGiantBubbleSecret :
 
         _hitCount++;
 
+
         if (_hitCount >= _requiredHits)
         {
+            // 破裂音と粒子放出を同じクリックで開始する。
             PlaySound(_breakSound);
+            EmitBurstParticles();
 
+            // 巨大泡本体を非表示にして演出を終了する。
             CompleteEffect(GiantBubbleEndReason.Destroyed);
             return;
         }
@@ -380,6 +409,146 @@ public sealed class TitleGiantBubbleSecret :
 
         // 移動は止めず、クリックによる見た目だけ更新する。
         ApplyVisual();
+    }
+    
+    private void EmitBurstParticles()
+    {
+        if (_burstParticles == null ||
+            _burstCamera == null ||
+            _bubbleRect == null)
+        {
+            Debug.LogWarning(
+                "巨大泡の破裂VFXに必要な参照が未設定です。",
+                this);
+            return;
+        }
+
+        if (!_burstCamera.orthographic)
+        {
+            Debug.LogWarning(
+                "破裂VFXはOrthographic Cameraを前提としています。",
+                this);
+            return;
+        }
+
+        // UI上の巨大泡の現在の四隅を取得する。
+        // 既存の配列を再利用し、毎回の配列確保を避ける。
+        _bubbleRect.GetWorldCorners(_bubbleCorners);
+
+        Vector2 bottomLeft =
+            RectTransformUtility.WorldToScreenPoint(
+                null, _bubbleCorners[0]);
+
+        Vector2 topLeft =
+            RectTransformUtility.WorldToScreenPoint(
+                null, _bubbleCorners[1]);
+
+        Vector2 bottomRight =
+            RectTransformUtility.WorldToScreenPoint(
+                null, _bubbleCorners[3]);
+
+        Vector2 screenCenter =
+            RectTransformUtility.WorldToScreenPoint(
+                null, _bubbleRect.position);
+
+        // 巨大泡の現在の画面上の大きさ。
+        // 奥行きによるScale変化も反映される。
+        float widthPixels =
+            Vector2.Distance(bottomLeft, bottomRight);
+
+        float heightPixels =
+            Vector2.Distance(bottomLeft, topLeft);
+
+        float radiusPixels =
+            Mathf.Min(widthPixels, heightPixels) *
+            0.5f * _burstRadiusMultiplier;
+
+        // CameraからParticle SystemのZ平面までの距離。
+        float cameraDistance =
+            _burstParticles.transform.position.z -
+            _burstCamera.transform.position.z;
+
+        if (cameraDistance <= 0f)
+        {
+            Debug.LogWarning(
+                "破裂用Particle SystemがCameraの背後にあります。",
+                this);
+            return;
+        }
+
+        // Screen Space - Overlay上の巨大泡の位置を
+        // Particle System用のワールド座標へ変換する。
+        Vector3 worldCenter =
+            _burstCamera.ScreenToWorldPoint(
+                new Vector3(
+                    screenCenter.x,
+                    screenCenter.y,
+                    cameraDistance));
+
+        Vector3 worldEdge =
+            _burstCamera.ScreenToWorldPoint(
+                new Vector3(
+                    screenCenter.x + radiusPixels,
+                    screenCenter.y,
+                    cameraDistance));
+
+        float worldRadius =
+            Vector3.Distance(worldCenter, worldEdge);
+
+        if (!_burstParticles.isPlaying)
+        {
+            _burstParticles.Play();
+        }
+
+        int count = Mathf.Max(1, _burstParticleCount);
+
+        float minSpeed = Mathf.Min(
+            _burstMinSpeed, _burstMaxSpeed);
+
+        float maxSpeed = Mathf.Max(
+            _burstMinSpeed, _burstMaxSpeed);
+
+        for (int i = 0; i < count; i++)
+        {
+            // 円周上にほぼ均等に分布させ、
+            // 少しだけランダムにずらす。
+            float angle =
+                2f * Mathf.PI *
+                (i + UnityEngine.Random.Range(-0.3f, 0.3f)) /
+                count;
+
+            Vector3 direction = new Vector3(
+                Mathf.Cos(angle),
+                Mathf.Sin(angle),
+                0f);
+
+            // 巨大泡の輪郭付近から発生。
+            float radiusVariation =
+                UnityEngine.Random.Range(0.8f, 1f);
+
+            Vector3 spawnPosition =
+                worldCenter +
+                direction * worldRadius * radiusVariation;
+
+            // 外側への拡散と、軽い上昇成分を合成。
+            float speed = UnityEngine.Random.Range(
+                minSpeed, maxSpeed);
+
+            Vector3 velocity =
+                direction * speed +
+                Vector3.up * _burstUpwardSpeed;
+
+            ParticleSystem.EmitParams parameters =
+                new ParticleSystem.EmitParams
+                {
+                    position = spawnPosition,
+                    velocity = velocity
+                };
+
+            // 位置・速度以外の寿命や大きさは
+            // Particle SystemのMain設定を使用する。
+            _burstParticles.Emit(parameters, 1);
+        }
     }
 
     /// <summary>
