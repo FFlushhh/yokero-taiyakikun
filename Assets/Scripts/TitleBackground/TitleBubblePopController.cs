@@ -24,10 +24,10 @@ public sealed class TitleBubblePopController : MonoBehaviour
 
     [Header("Pop Sounds")]
     [SerializeField] private AudioSource _popAudioSource;
-    [SerializeField] private AudioClip[] _popSoundClips;
 
-    [SerializeField, Range(0f, 1f)]
-    private float _popVolume = 0.65f;
+    [SerializeField]
+    private WeightedSeGroup _popSoundGroup =
+        new WeightedSeGroup();
 
     [Header("Optional Effect")]
     [SerializeField] private ParticleSystem _popEffect;
@@ -247,7 +247,8 @@ public sealed class TitleBubblePopController : MonoBehaviour
         targetSystem.SetParticles(
             targetBuffer, selectedAliveCount);
 
-        PlayRandomPopSound();
+        _popSoundGroup?.TryPlay(_popAudioSource);
+
         EmitPopEffect(selectedWorldPosition);
 
         BubblePopped?.Invoke(selectedWorldPosition);
@@ -298,35 +299,6 @@ public sealed class TitleBubblePopController : MonoBehaviour
         return Mathf.Max(
             Mathf.Abs(scale.x),
             Mathf.Abs(scale.y));
-    }
-
-    private void PlayRandomPopSound()
-    {
-        if (_popAudioSource == null ||
-            _popSoundClips == null ||
-            _popSoundClips.Length == 0)
-        {
-            return;
-        }
-
-        // 最初の候補をランダムに選び、
-        // nullならほかの候補を巡回する。
-        int startIndex = UnityEngine.Random.Range(
-            0, _popSoundClips.Length);
-
-        for (int i = 0; i < _popSoundClips.Length; i++)
-        {
-            int index = (startIndex + i) %
-                _popSoundClips.Length;
-
-            AudioClip clip = _popSoundClips[index];
-
-            if (clip != null)
-            {
-                _popAudioSource.PlayOneShot(clip, _popVolume);
-                return;
-            }
-        }
     }
 
     private void EmitPopEffect(Vector3 worldPosition)

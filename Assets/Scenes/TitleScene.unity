@@ -6326,7 +6326,7 @@ MonoBehaviour:
   _bubbleVisual: {fileID: 968759542}
   _bubbleImage: {fileID: 968759545}
   _movementArea: {fileID: 2083837022}
-  _audioSource: {fileID: 0}
+  _audioSource: {fileID: 1073402974}
   _requiredHits: 4
   _hitScaleIncrease: 0.12
   _damagedAlphaMultiplier: 0.65
@@ -6347,8 +6347,165 @@ MonoBehaviour:
   _burstMinSpeed: 1.1
   _burstMaxSpeed: 2.2
   _burstUpwardSpeed: 0.45
-  _hitSound: {fileID: 0}
-  _breakSound: {fileID: 0}
+  _hitSoundGroup:
+    _volume: 0.65
+    _entries:
+    - _clip: {fileID: 8300000, guid: 2603147d062164079aae27c19fc248c4, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: 39362e7c266394f18999fd90aec0168e, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: 9fb17a9e0fd7e4e8d962c74bf309488e, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: 9dcf0ada5e57c4cc9b7db778086d0ba5, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: 2ecf315b577c24b169ea1e988e37654a, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: 34f4f3e539693484cbf08f3eeab3fc80, type: 3}
+      _weight: 1
+  _breakSoundGroup:
+    _volume: 0.65
+    _entries:
+    - _clip: {fileID: 8300000, guid: 3836d68da9420453d86676500161ec26, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: 89d3a6a7bcddb489a87271dc8cf4b399, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: a9e36f421f404413a905c93244acd3cb, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: adb9c04f4e28743e68fa60c04ebd5fdb, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: 8c7e47119eae5453e8dab876ea920345, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: 7d3eb4dad5efd49d687c816895b7d88c, type: 3}
+      _weight: 1
+--- !u!1 &1073402973
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1073402975}
+  - component: {fileID: 1073402974}
+  m_Layer: 0
+  m_Name: BubbleSfxAudio
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!82 &1073402974
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073402973}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!4 &1073402975
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1073402973}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -8.94514, y: 3.15826, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1074932973
 GameObject:
   m_ObjectHideFlags: 0
@@ -11731,9 +11888,24 @@ MonoBehaviour:
   - {fileID: 763050603}
   _hitRadiusMultiplier: 0.9
   _minimumHitRadiusPixels: 12
-  _popAudioSource: {fileID: 0}
-  _popSoundClips: []
-  _popVolume: 0.65
+  _popAudioSource: {fileID: 1073402974}
+  _popSoundGroup:
+    _volume: 0.65
+    _entries:
+    - _clip: {fileID: 8300000, guid: 4f3fc62f390fd47ccbecdbd334ce935a, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: d0b54729fb63747078c918c83b475b4c, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: 38b306430bf244dd3a635052b8195b98, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: d681becbab4e84881865f0427533a120, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: 3178a1d79bd57438a8564183c4f46c36, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: 968bfb66734db474dba1e53401221a3f, type: 3}
+      _weight: 1
+    - _clip: {fileID: 8300000, guid: a8e18aa22853540159b47a1edc929714, type: 3}
+      _weight: 1
   _popEffect: {fileID: 0}
   _effectParticleCount: 5
 --- !u!4 &1762425346
@@ -11764,12 +11936,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TitleBubbleSecretTrigger
   _popController: {fileID: 1762425345}
-  _requiredPopCount: 1
+  _requiredPopCount: 5
   _secretEffects:
   - _effectComponent: {fileID: 2126778978}
-    _weight: 0
+    _weight: 10
   - _effectComponent: {fileID: 1052311107}
-    _weight: 100
+    _weight: 90
 --- !u!1 &1763793241
 GameObject:
   m_ObjectHideFlags: 0
@@ -12469,7 +12641,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8387964204036197297, guid: bd14385977596e14695068ebc4dcc3d8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12503,3 +12675,4 @@ SceneRoots:
   - {fileID: 2126778977}
   - {fileID: 1052311106}
   - {fileID: 842415203}
+  - {fileID: 1073402975}

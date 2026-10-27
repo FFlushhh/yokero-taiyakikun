@@ -93,10 +93,14 @@ public sealed class TitleGiantBubbleSecret :
     [SerializeField, Min(0f)]
     private float _burstUpwardSpeed = 0.45f;
 
-    
-    [Header("Optional Sounds")]
-    [SerializeField] private AudioClip _hitSound;
-    [SerializeField] private AudioClip _breakSound;
+    [Header("Giant Bubble Sounds")]
+    [SerializeField]
+    private WeightedSeGroup _hitSoundGroup =
+        new WeightedSeGroup();
+
+    [SerializeField]
+    private WeightedSeGroup _breakSoundGroup =
+        new WeightedSeGroup();
 
     private RectTransform _bubbleRect;
 
@@ -393,21 +397,21 @@ public sealed class TitleGiantBubbleSecret :
 
         _hitCount++;
 
-
         if (_hitCount >= _requiredHits)
         {
-            // 破裂音と粒子放出を同じクリックで開始する。
-            PlaySound(_breakSound);
-            EmitBurstParticles();
+            // 最終クリックは破壊SEだけを再生する。
+            PlaySound(_breakSoundGroup);
 
-            // 巨大泡本体を非表示にして演出を終了する。
+            // 既存の破裂VFXと終了処理を維持する。
+            EmitBurstParticles();
             CompleteEffect(GiantBubbleEndReason.Destroyed);
             return;
         }
 
-        PlaySound(_hitSound);
+        // まだ耐久値が残っている場合の専用SE。
+        PlaySound(_hitSoundGroup);
 
-        // 移動は止めず、クリックによる見た目だけ更新する。
+        // 既存のクリックによる見た目の更新を維持。
         ApplyVisual();
     }
     
@@ -574,12 +578,9 @@ public sealed class TitleGiantBubbleSecret :
         return bubbleBottom > screenTop;
     }
 
-    private void PlaySound(AudioClip clip)
+    private void PlaySound(WeightedSeGroup soundGroup)
     {
-        if (_audioSource != null && clip != null)
-        {
-            _audioSource.PlayOneShot(clip);
-        }
+        soundGroup?.TryPlay(_audioSource);
     }
 
     /// <summary>
