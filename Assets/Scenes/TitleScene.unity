@@ -11936,12 +11936,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TitleBubbleSecretTrigger
   _popController: {fileID: 1762425345}
-  _requiredPopCount: 5
+  _requiredPopCount: 10
   _secretEffects:
   - _effectComponent: {fileID: 2126778978}
-    _weight: 10
+    _weight: 1
   - _effectComponent: {fileID: 1052311107}
-    _weight: 90
+    _weight: 9
   _activationAudioSource: {fileID: 1073402974}
   _activationSoundGroup:
     _volume: 0.65
@@ -12548,7 +12548,7 @@ MonoBehaviour:
   _endViewportPosition: {x: 1.15, y: 0.36}
   _worldZ: 0
   _travelSeconds: 6
-  _verticalAmplitude: 0.12
+  _verticalAmplitude: 0.2
 --- !u!1001 &599046722303765671
 PrefabInstance:
   m_ObjectHideFlags: 0
