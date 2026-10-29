@@ -1,0 +1,19 @@
+{
+    "name": "Yokero.TitleBackground.EditModeTests",
+    "rootNamespace": "",
+    "references": [
+        "GUID:f778be5f7223b46338399bfef0dcb316",
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
