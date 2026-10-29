@@ -128,7 +128,7 @@ public sealed class TitleBubbleSecretTrigger : MonoBehaviour
             return;
         }
 
-        float totalWeight = 0f;
+        double totalWeight = 0d;
 
         // 登録済みの有効な演出の重みを合計する。
         foreach (SecretEffectEntry entry in _secretEffects)
@@ -148,8 +148,8 @@ public sealed class TitleBubbleSecretTrigger : MonoBehaviour
             return;
         }
 
-        float randomValue = UnityEngine.Random.value * totalWeight;
-        float accumulatedWeight = 0f;
+        double randomValue = (double)UnityEngine.Random.value * totalWeight;
+        double accumulatedWeight = 0d;
 
         ITitleBubbleSecretEffect selectedEffect = null;
         ITitleBubbleSecretEffect lastValidEffect = null;
@@ -220,7 +220,17 @@ public sealed class TitleBubbleSecretTrigger : MonoBehaviour
     {
         effect = null;
 
-        if (entry == null || entry.Weight <= 0f)
+        if (entry == null)
+        {
+            return false;
+        }
+
+        float weight = entry.Weight;
+
+        // 0以下、NaN、InfinityのWeightは抽選対象外。
+        if (!(weight > 0f) ||
+            float.IsNaN(weight) ||
+            float.IsInfinity(weight))
         {
             return false;
         }

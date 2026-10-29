@@ -235,4 +235,40 @@ public sealed class TitleBubbleSecretTriggerTests
         Assert.AreEqual(0, _trigger.PopCount);
         yield return null;
     }
+
+    [UnityTest]
+    public IEnumerator NaNWeight_IsExcluded()
+    {
+        TitlePlayTestUtil.SetEffectEntries(
+            _trigger,
+            (_fakeA, 1f),
+            (_fakeB, float.NaN));
+
+        Pop(10);
+
+        Assert.AreEqual(1, _fakeA.StartCount);
+        Assert.AreEqual(0, _fakeB.StartCount);
+        Assert.IsTrue(_trigger.IsEffectRunning);
+
+        _fakeA.Complete();
+        yield return null;
+    }
+
+    [UnityTest]
+    public IEnumerator InfinityWeight_IsExcluded()
+    {
+        TitlePlayTestUtil.SetEffectEntries(
+            _trigger,
+            (_fakeA, 1f),
+            (_fakeB, float.PositiveInfinity));
+
+        Pop(10);
+
+        Assert.AreEqual(1, _fakeA.StartCount);
+        Assert.AreEqual(0, _fakeB.StartCount);
+        Assert.IsTrue(_trigger.IsEffectRunning);
+
+        _fakeA.Complete();
+        yield return null;
+    }
 }
