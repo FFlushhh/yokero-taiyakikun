@@ -43,6 +43,14 @@ public sealed class TitleBubbleSecretTrigger : MonoBehaviour
     private SecretEffectEntry[] _secretEffects =
         Array.Empty<SecretEffectEntry>();
 
+    [Header("Secret Activation Sound")]
+    [SerializeField]
+    private AudioSource _activationAudioSource;
+
+    [SerializeField]
+    private WeightedSeGroup _activationSoundGroup =
+        new WeightedSeGroup();
+
     private int _popCount;
     private bool _isEffectRunning;
 
@@ -191,8 +199,12 @@ public sealed class TitleBubbleSecretTrigger : MonoBehaviour
             return;
         }
 
-        // 10個分のカウントを消費。
+        // 発動条件を満たしたためカウントをリセット。
         _popCount = 0;
+
+        // 隠し演出の開始に成功したときだけ追加SEを再生。
+        // 通常泡SEとは同じフレームで重ねて鳴る。
+        _activationSoundGroup?.TryPlay(_activationAudioSource);
 
         Debug.Log(
             "隠し演出を開始しました。",

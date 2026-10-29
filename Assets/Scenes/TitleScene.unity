@@ -11942,6 +11942,12 @@ MonoBehaviour:
     _weight: 10
   - _effectComponent: {fileID: 1052311107}
     _weight: 90
+  _activationAudioSource: {fileID: 1073402974}
+  _activationSoundGroup:
+    _volume: 0.65
+    _entries:
+    - _clip: {fileID: 8300000, guid: 768ca07d9a4894c01ad94549e17c95f5, type: 3}
+      _weight: 1
 --- !u!1 &1763793241
 GameObject:
   m_ObjectHideFlags: 0
