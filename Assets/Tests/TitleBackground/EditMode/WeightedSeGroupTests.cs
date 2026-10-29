@@ -109,28 +109,55 @@ public sealed class WeightedSeGroupTests
             Assert.AreSame(valid, group.SelectClip());
     }
 
-
     [Test]
     public void LargeFiniteWeights_DoNotOverflow()
     {
         AudioClip a = Clip("a");
         AudioClip b = Clip("b");
 
+        // 合計するとfloatの範囲を超える巨大Weightを設定。
         var group = TitleEditTestUtil.Group(
             (a, float.MaxValue),
             (b, float.MaxValue)
         );
 
-        for (int i = 0; i < 20; i++)
+        // 同じ乱数列で再現可能なテストにする。
+        UnityEngine.Random.InitState(314159);
+
+        int countA = 0;
+        int countB = 0;
+
+        const int sampleCount = 1000;
+
+        for (int i = 0; i < sampleCount; i++)
         {
+            // 抽選は1回だけ実行する。
             AudioClip selected = group.SelectClip();
 
-            Assert.IsTrue(
-                ReferenceEquals(a, selected) ||
-                ReferenceEquals(b, selected),
-                "大きなWeightでも、有効なAudioClipが選択される必要があります。"
-            );
+            if (ReferenceEquals(selected, a))
+            {
+                countA++;
+            }
+            else if (ReferenceEquals(selected, b))
+            {
+                countB++;
+            }
+            else
+            {
+                Assert.Fail(
+                    "抽選候補に存在しないAudioClipが選ばれました。");
+            }
         }
+
+        // すべての抽選で有効な候補が選択されたこと。
+        Assert.AreEqual(
+            sampleCount,
+            countA + countB);
+
+        // 同一Weightなので約50%ずつ選択される。
+        // 乱数による自然なばらつきを考慮する。
+        Assert.That(countA, Is.InRange(400, 600));
+        Assert.That(countB, Is.InRange(400, 600));
     }
 
     [Test]

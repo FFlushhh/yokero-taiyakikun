@@ -30,6 +30,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.TestTools;
 using UnityEngine.UI;
+using UnityEngine.InputSystem;
 
 public sealed class TitleBubblePopControllerTests
 {
@@ -39,11 +40,23 @@ public sealed class TitleBubblePopControllerTests
     private TitleBubblePopController _controller;
     private int _eventCount;
 
+    // 物理マウスに依存しないテスト用Input System
+    private readonly InputTestFixture _inputFixture = new InputTestFixture();
+
+    // テスト中に使用する仮想マウス
+    private Mouse _testMouse;
+
     [UnitySetUp]
     public IEnumerator SetUp()
     {
         // テストケース間でイベント回数を引き継がない
         _eventCount = 0;
+
+        // Input Systemの状態を保存し、テスト用に初期化する
+        _inputFixture.Setup();
+
+        // テストで使用する仮想マウスを作成する
+        _testMouse = InputSystem.AddDevice<Mouse>();
         
         GameObject cameraGo = Make("Camera");
         _camera = cameraGo.AddComponent<Camera>();
@@ -76,10 +89,22 @@ public sealed class TitleBubblePopControllerTests
     [UnityTearDown]
     public IEnumerator TearDown()
     {
+        // テスト用GameObjectを破棄する
         foreach (var obj in _objects)
-            if (obj != null) UnityEngine.Object.Destroy(obj);
+        {
+            if (obj != null)
+            {
+                UnityEngine.Object.Destroy(obj);
+            }
+        }
+
         _objects.Clear();
+
+        // Destroyによる破棄処理を完了させる
         yield return null;
+
+        // テスト開始前のInput Systemへ復元する
+        _inputFixture.TearDown();
     }
 
     private GameObject Make(string name)
@@ -142,29 +167,124 @@ public sealed class TitleBubblePopControllerTests
     [UnityTest]
     public IEnumerator UiGraphicRaycaster_TakesPrecedenceOverBubble()
     {
+        // UIの背後に泡を1個生成する。
         Emit(Vector3.zero);
-        var eventSystem = Make("EventSystem").AddComponent<EventSystem>();
+
+        Assert.AreEqual(1, _particles.particleCount);
+
+        // UIのイベント管理用EventSystemを生成する。
+        var eventSystem =
+            Make("EventSystem").AddComponent<EventSystem>();
+
         EventSystem.current = eventSystem;
+
+        // 画面全体を覆うUI Canvasを生成する。
         var canvasGo = Make("UI");
+
         var canvas = canvasGo.AddComponent<Canvas>();
         canvas.renderMode = RenderMode.ScreenSpaceOverlay;
+
         canvasGo.AddComponent<GraphicRaycaster>();
-        var imageGo = new GameObject("BlockingImage", typeof(RectTransform), typeof(Image));
+
+        // クリックを遮断するImageを生成する。
+        var imageGo = new GameObject(
+            "BlockingImage",
+            typeof(RectTransform),
+            typeof(Image));
+
         imageGo.transform.SetParent(canvasGo.transform, false);
         _objects.Add(imageGo);
-        RectTransform rect = imageGo.GetComponent<RectTransform>();
+
+        RectTransform rect =
+            imageGo.GetComponent<RectTransform>();
+
         rect.anchorMin = Vector2.zero;
         rect.anchorMax = Vector2.one;
         rect.offsetMin = Vector2.zero;
         rect.offsetMax = Vector2.zero;
+
+        // 透明な画像でもUI Raycastの対象となる。
         imageGo.GetComponent<Image>().raycastTarget = true;
+
         Canvas.ForceUpdateCanvases();
         yield return null;
-        Vector2 point = (Vector2)_camera.WorldToScreenPoint(Vector3.zero);
-        bool overUi = (bool)TitlePlayTestUtil.Call(_controller, "IsPointerOverUi", point);
-        Assert.IsTrue(overUi, "UIのRaycast結果が取得できません。");
-        // 実際のUpdateではoverUiならTryPopBubbleを呼ばない。
+
+        // 泡が存在する画面中央の座標。
+        Vector2 point =
+            (Vector2)_camera.WorldToScreenPoint(Vector3.zero);
+
+        // UIがこの座標を遮断することを事前確認。
+        bool overUi = (bool)TitlePlayTestUtil.Call(
+            _controller,
+            "IsPointerOverUi",
+            point);
+
+        Assert.IsTrue(
+            overUi,
+            "UIのRaycast結果が取得できません。");
+
+        // 仮想マウスをUIと泡が重なる位置に移動する。
+        _inputFixture.Move(_testMouse.position, point);
+        yield return null;
+
+        Assert.AreSame(_testMouse, Mouse.current);
+
+        // UI上で左クリックする。
+        _inputFixture.Press(_testMouse.leftButton);
+        yield return null;
+
+        // UIが優先されたため、泡の破壊イベントは発生しない。
         Assert.AreEqual(0, _eventCount);
-        Assert.IsNotNull(eventSystem);
+
+        // 泡そのものも削除されていないこと。
+        Assert.AreEqual(1, _particles.particleCount);
+
+        _inputFixture.Release(_testMouse.leftButton);
+        yield return null;
+
+        Assert.AreEqual(0, _eventCount);
+    }
+
+    [UnityTest]
+    public IEnumerator MouseClickOnBubble_PopsOneParticle()
+    {
+        // 画面中央に泡を1個生成する。
+        Emit(Vector3.zero);
+
+        Assert.AreEqual(1, _particles.particleCount);
+
+        // 泡のワールド座標を画面座標に変換する。
+        Vector2 screenPoint =
+            (Vector2)_camera.WorldToScreenPoint(Vector3.zero);
+
+        // 仮想マウスを泡の位置へ移動する。
+        _inputFixture.Move(
+            _testMouse.position,
+            screenPoint);
+
+        // 入力イベントの処理を待つ。
+        yield return null;
+
+        Assert.AreSame(_testMouse, Mouse.current);
+
+        // マウスの左ボタンを押す。
+        _inputFixture.Press(_testMouse.leftButton);
+
+        // 次のフレームで入力イベントとUpdateが実行される。
+        yield return null;
+
+        // 実際のUpdate経由でイベントが1回発火したこと。
+        Assert.AreEqual(1, _eventCount);
+
+        // クリックされたParticleが削除されること。
+        _particles.Simulate(0.02f, true, false);
+        Assert.AreEqual(0, _particles.particleCount);
+
+        // ボタンを離して入力状態を戻す。
+        _inputFixture.Release(_testMouse.leftButton);
+        yield return null;
+
+        // 追加の破壊イベントが発生していないこと。
+        Assert.AreEqual(1, _eventCount);
     }
 }
