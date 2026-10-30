@@ -285,8 +285,19 @@ public sealed class TitleLogoSceneConfigurationTests
         Canvas canvas = canvasObject.GetComponent<Canvas>();
 
         Assert.IsNotNull(canvas);
+
         Assert.AreEqual(
-            RenderMode.ScreenSpaceOverlay, canvas.renderMode);
+            RenderMode.ScreenSpaceCamera,
+            canvas.renderMode);
+
+        GameObject cameraObject = FindObject("Main Camera");
+
+        Assert.IsNotNull(cameraObject);
+        Assert.AreSame(
+            cameraObject.GetComponent<Camera>(),
+            canvas.worldCamera);
+
+        Assert.AreEqual(20, canvas.sortingOrder);
 
         Assert.IsNotNull(
             canvasObject.GetComponent<GraphicRaycaster>());
