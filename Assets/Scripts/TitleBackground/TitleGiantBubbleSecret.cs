@@ -434,27 +434,52 @@ public sealed class TitleGiantBubbleSecret :
                 this);
             return;
         }
+        
+        // 巨大泡が属するCanvasの描画方式に合わせて、
+        // UIのワールド座標をスクリーン座標へ変換する。
+        Canvas canvas = _movementArea.GetComponent<Canvas>();
 
-        // UI上の巨大泡の現在の四隅を取得する。
-        // 既存の配列を再利用し、毎回の配列確保を避ける。
+        if (canvas == null)
+        {
+            Debug.LogWarning(
+                "巨大泡の親Canvasが見つかりません。",
+                this);
+            return;
+        }
+
+        Camera uiCamera = canvas.renderMode ==
+                          RenderMode.ScreenSpaceOverlay
+            ? null
+            : canvas.worldCamera;
+
+        if (canvas.renderMode != RenderMode.ScreenSpaceOverlay &&
+            uiCamera == null)
+        {
+            Debug.LogWarning(
+                "巨大泡のCanvasにRender Cameraが設定されていません。",
+                this);
+            return;
+        }
+        
+        // 巨大泡の現在の四隅から画面座標を求める。
         _bubbleRect.GetWorldCorners(_bubbleCorners);
 
         Vector2 bottomLeft =
             RectTransformUtility.WorldToScreenPoint(
-                null, _bubbleCorners[0]);
+                uiCamera, _bubbleCorners[0]);
 
         Vector2 topLeft =
             RectTransformUtility.WorldToScreenPoint(
-                null, _bubbleCorners[1]);
+                uiCamera, _bubbleCorners[1]);
 
         Vector2 bottomRight =
             RectTransformUtility.WorldToScreenPoint(
-                null, _bubbleCorners[3]);
+                uiCamera, _bubbleCorners[3]);
 
         Vector2 screenCenter =
             RectTransformUtility.WorldToScreenPoint(
-                null, _bubbleRect.position);
-
+                uiCamera, _bubbleRect.position);
+        
         // 巨大泡の現在の画面上の大きさ。
         // 奥行きによるScale変化も反映される。
         float widthPixels =

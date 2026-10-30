@@ -180,4 +180,53 @@ public sealed class TitleSceneConfigurationTests
             "_bubbleImage", "_arcImage", "_arcGroup", "_spotImage", "_spotGroup"})
             Assert.IsNotNull(Property(shimmer, field).objectReferenceValue, field);
     }
+    
+    [Test]
+    public void GiantBubbleBurst_RendersInFrontOfTitleCanvas()
+    {
+        TitleGiantBubbleSecret giant =
+            Find<TitleGiantBubbleSecret>();
+
+        ParticleSystem particles =
+            Property(giant, "_burstParticles")
+                .objectReferenceValue as ParticleSystem;
+
+        RectTransform movementArea =
+            Property(giant, "_movementArea")
+                .objectReferenceValue as RectTransform;
+
+        Camera burstCamera =
+            Property(giant, "_burstCamera")
+                .objectReferenceValue as Camera;
+
+        Assert.IsNotNull(particles);
+        Assert.IsNotNull(movementArea);
+        Assert.IsNotNull(burstCamera);
+
+        Canvas canvas = movementArea.GetComponent<Canvas>();
+
+        Assert.IsNotNull(canvas);
+
+        // ParticleとUIを同じカメラで描画する。
+        Assert.AreEqual(
+            RenderMode.ScreenSpaceCamera,
+            canvas.renderMode);
+
+        Assert.AreSame(burstCamera, canvas.worldCamera);
+
+        ParticleSystemRenderer particleRenderer =
+            particles.GetComponent<ParticleSystemRenderer>();
+
+        Assert.IsNotNull(particleRenderer);
+
+        // Sorting Layerが一致すること。
+        Assert.AreEqual(
+            canvas.sortingLayerID,
+            particleRenderer.sortingLayerID);
+
+        // 破裂ParticleがCanvasより手前にあること。
+        Assert.Greater(
+            particleRenderer.sortingOrder,
+            canvas.sortingOrder);
+    }
 }
