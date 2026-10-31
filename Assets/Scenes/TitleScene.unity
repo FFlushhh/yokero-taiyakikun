@@ -390,7 +390,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7502278d7e106864d8e6d45330751bdb, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.6
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -6165,7 +6165,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 3d81b2e6c00b0434eae8293b3e87556b, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.9
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -6348,7 +6348,7 @@ MonoBehaviour:
   _burstMaxSpeed: 2.2
   _burstUpwardSpeed: 0.45
   _hitSoundGroup:
-    _volume: 0.65
+    _volume: 0.9
     _entries:
     - _clip: {fileID: 8300000, guid: 2603147d062164079aae27c19fc248c4, type: 3}
       _weight: 1
@@ -6363,7 +6363,7 @@ MonoBehaviour:
     - _clip: {fileID: 8300000, guid: 34f4f3e539693484cbf08f3eeab3fc80, type: 3}
       _weight: 1
   _breakSoundGroup:
-    _volume: 0.65
+    _volume: 0.95
     _entries:
     - _clip: {fileID: 8300000, guid: 3836d68da9420453d86676500161ec26, type: 3}
       _weight: 1
@@ -11890,7 +11890,7 @@ MonoBehaviour:
   _minimumHitRadiusPixels: 12
   _popAudioSource: {fileID: 1073402974}
   _popSoundGroup:
-    _volume: 0.65
+    _volume: 0.7
     _entries:
     - _clip: {fileID: 8300000, guid: 4f3fc62f390fd47ccbecdbd334ce935a, type: 3}
       _weight: 1
@@ -11944,7 +11944,7 @@ MonoBehaviour:
     _weight: 9
   _activationAudioSource: {fileID: 1073402974}
   _activationSoundGroup:
-    _volume: 0.65
+    _volume: 1
     _entries:
     - _clip: {fileID: 8300000, guid: 768ca07d9a4894c01ad94549e17c95f5, type: 3}
       _weight: 1
@@ -12146,7 +12146,7 @@ MonoBehaviour:
   _minimumClickIntervalSeconds: 0.08
   _clickAudioSource: {fileID: 1763793245}
   _clickClip: {fileID: 8300000, guid: 6aaecdfd799747e49bf12ed7e96f366c, type: 3}
-  _clickVolume: 0.7
+  _clickVolume: 0.8
   _alphaHitTestMinimumThreshold: 0.15
 --- !u!1 &1907276805
 GameObject:
