@@ -5,9 +5,8 @@ using UnityEngine.Serialization;
 using Yokero.Collision;
 
 /// <summary>
-/// マウス追従・画面内制限・高速移動の経路衝突判定を維持しつつ、
-/// 実際に実行する移動方向へプレイヤーを向ける
-/// 既存 PlayerController.cs の置き換え版（同名ファイルを上書きし、既存.metaを維持）
+/// マウスへの即時追従、移動範囲の制限、経路衝突判定、
+/// 安定した進行方向の推定とVisualの滑らかな回転を管理する。
 /// </summary>
 public class PlayerController : MonoBehaviour
 {
@@ -15,37 +14,57 @@ public class PlayerController : MonoBehaviour
     [FormerlySerializedAs("mainCamera")]
     [SerializeField] private Camera _mainCamera;
 
-    [Header("Rotation Settings")]
-    [SerializeField, Min(0f)] private float _rotationThreshold = 0.0003f;
-
-    [Header("Visual Bounds")]
-    [Tooltip("Player/Visual の SpriteRenderer。画面外へのはみ出し防止に使用する。")]
+    [Header("Visual")]
     [SerializeField] private SpriteRenderer _visualSpriteRenderer;
 
-    [Header("Collision Settings (T01)")]
+    [Header("Collision")]
     [SerializeField] private Collider2D _collisionCollider;
     [SerializeField] private PlayerCollision _playerCollision;
 
-    [Header("Screen Edge Settings")]
-    [Tooltip("画面端からの余白。0ならプレイヤーの中心が画面端まで移動可能。")]
+    [Header("Screen Edge")]
     [SerializeField, Range(0f, 0.1f)]
     private float _edgeMarginViewport = 0.02f;
 
-    private Vector3 _lastMouseWorldPos;
-    private Vector3 _initialScale;
+    [Header("Direction Filtering")]
+    [Tooltip("マウス速度の平滑化時間。大きいほど方向が安定する。")]
+    [SerializeField, Min(0.001f)]
+    private float _directionFilterTime = 0.065f;
+
+    [Tooltip("速度から向きを判断する最低速度（pixel/s）")]
+    [SerializeField, Min(0f)]
+    private float _minDirectionSpeed = 18f;
+
+    [Tooltip("低速移動でも向きを更新するための累積距離（pixel）")]
+    [SerializeField, Min(0.1f)]
+    private float _slowDirectionDistancePixels = 3f;
+
+    [Header("Rotation")]
+    [Tooltip("見た目の角度が目標角度へ追従する時間")]
+    [SerializeField, Min(0.001f)]
+    private float _rotationSmoothTime = 0.045f;
+
+    [Tooltip("真上・真下付近での左右反転を安定させる幅")]
+    [SerializeField, Range(0f, 0.99f)]
+    private float _facingHysteresis = 0.2f;
+
+    [Tooltip("左右移動時にも魚の上下を保つ。OFFなら完全な360度回転。")]
+    [SerializeField]
+    private bool _keepUpright = true;
+
+    private Transform _visualTransform;
     private bool _movementEnabled = true;
+    private bool _facingLeft;
 
-    // Cast結果を使い回し、毎フレームの割り当てを避ける（既存仕様）
-    private readonly List<RaycastHit2D> _castResults = new List<RaycastHit2D>(16);
+    private Vector2 _previousScreenPosition;
+    private Vector2 _directionAnchorScreen;
+    private Vector2 _filteredVelocity;
 
-    public void SetMovementEnabled(bool enabled)
-    {
-        _movementEnabled = enabled;
-        if (!enabled)
-        {
-            _lastMouseWorldPos = transform.position;
-        }
-    }
+    private float _currentAngle;
+    private float _targetAngle;
+    private float _angularVelocity;
+
+    private readonly List<RaycastHit2D> _castResults =
+        new List<RaycastHit2D>(16);
 
     private void Start()
     {
@@ -54,18 +73,9 @@ public class PlayerController : MonoBehaviour
             _mainCamera = Camera.main;
         }
 
-        if (_mainCamera == null)
-        {
-            Debug.LogError("PlayerController: Main Cameraが見つかりません。", this);
-            _movementEnabled = false;
-            return;
-        }
-
-        _initialScale = transform.localScale;
-
         if (_collisionCollider == null)
         {
-            _collisionCollider = GetComponent<CapsuleCollider2D>();
+            _collisionCollider = GetComponent<PolygonCollider2D>();
         }
 
         if (_playerCollision == null)
@@ -75,123 +85,260 @@ public class PlayerController : MonoBehaviour
 
         if (_visualSpriteRenderer == null)
         {
-            // Player本体の空SpriteRendererを拾わないよう、子から探す
-            SpriteRenderer[] renderers = GetComponentsInChildren<SpriteRenderer>();
-            foreach (SpriteRenderer renderer in renderers)
+            Transform visual = transform.Find("Visual");
+
+            if (visual != null)
             {
-                if (renderer.gameObject != gameObject && renderer.sprite != null)
-                {
-                    _visualSpriteRenderer = renderer;
-                    break;
-                }
+                _visualSpriteRenderer =
+                    visual.GetComponent<SpriteRenderer>();
             }
         }
 
-        if (_collisionCollider == null || _playerCollision == null)
+        if (_mainCamera == null ||
+            _collisionCollider == null ||
+            !_collisionCollider.enabled ||
+            _playerCollision == null ||
+            _visualSpriteRenderer == null)
         {
-            Debug.LogError("PlayerController: T01の衝突判定に必要なComponentがありません。", this);
-            _movementEnabled = false;
+            Debug.LogError(
+                "PlayerController: 必要な参照が不足しています。",
+                this);
+
+            enabled = false;
+            return;
         }
 
-        Vector2 mouseScreenPos = Vector2.zero;
-        if (Mouse.current != null)
-        {
-            mouseScreenPos = Mouse.current.position.ReadValue();
-        }
+        _visualTransform = _visualSpriteRenderer.transform;
 
-        float camDistance = Mathf.Abs(_mainCamera.transform.position.z);
-        _lastMouseWorldPos = _mainCamera.ScreenToWorldPoint(
-            new Vector3(mouseScreenPos.x, mouseScreenPos.y, camDistance));
+        // 以後、回転はVisualのみに適用する。
+        _currentAngle = _visualTransform.localEulerAngles.z;
+        _targetAngle = _currentAngle;
+        _facingLeft = _visualSpriteRenderer.flipY;
+
+        ResetDirectionTracking(transform.position);
     }
 
     private void Update()
     {
-        if (!_movementEnabled || _mainCamera == null || Mouse.current == null)
+        if (!_movementEnabled ||
+            _mainCamera == null ||
+            Mouse.current == null)
         {
             return;
         }
 
-        if (_playerCollision != null &&
-            _playerCollision.gameManager != null &&
+        if (_playerCollision.gameManager != null &&
             _playerCollision.gameManager.GameOver)
         {
             return;
         }
 
-        Vector2 mouseScreenPos = Mouse.current.position.ReadValue();
-        float camDistance = Mathf.Abs(_mainCamera.transform.position.z);
+        Vector2 mouseScreenPosition =
+            Mouse.current.position.ReadValue();
 
-        Vector3 currentMouseWorldPos = _mainCamera.ScreenToWorldPoint(
-            new Vector3(mouseScreenPos.x, mouseScreenPos.y, camDistance));
+        Vector2 targetScreenPosition =
+            GetClampedScreenPosition(mouseScreenPosition);
 
-        // マウスの前回座標はGameManagerとの互換性のため保持する
-        // 向きの判定には使わない（画面端などで実移動と異なるため）
-        _lastMouseWorldPos = currentMouseWorldPos;
+        float cameraDistance = Mathf.Abs(
+            _mainCamera.transform.position.z -
+            transform.position.z);
 
-    // 画面端から一定割合の余白を確保する。
-    // 魚の回転角度に左右されない移動範囲を使用する。
-    Vector3 min = _mainCamera.ViewportToWorldPoint(
-        new Vector3(
-            _edgeMarginViewport,
-            _edgeMarginViewport,
-            camDistance));
+        Vector3 targetPosition = _mainCamera.ScreenToWorldPoint(
+            new Vector3(
+                targetScreenPosition.x,
+                targetScreenPosition.y,
+                cameraDistance));
 
-    Vector3 max = _mainCamera.ViewportToWorldPoint(
-        new Vector3(
-            1f - _edgeMarginViewport,
-            1f - _edgeMarginViewport,
-            camDistance));
+        targetPosition.z = transform.position.z;
 
-    // マウス位置を、固定された移動可能範囲に制限する。
-    Vector3 targetPos = currentMouseWorldPos;
+        // 移動前に経路上の敵との衝突を確認する。
+        Vector2 movement =
+            (Vector2)(targetPosition - transform.position);
 
-    targetPos.x = Mathf.Clamp(targetPos.x, min.x, max.x);
-    targetPos.y = Mathf.Clamp(targetPos.y, min.y, max.y);
-    targetPos.z = transform.position.z;
-
-        // 「画面内に制限された移動先」への実変位を進行方向に採用する
-        Vector2 movement = (Vector2)(targetPos - transform.position);
-
-        // 既存T01: 実際に移動する前に移動経路上の敵を検査
-        if (_collisionCollider != null && _playerCollision != null)
+        if (PlayerPathCollision2D.HitsEnemy(
+            _collisionCollider,
+            movement,
+            _castResults))
         {
-            bool hitEnemy = PlayerPathCollision2D.HitsEnemy(
-                _collisionCollider, movement, _castResults);
-            if (hitEnemy)
-            {
-                _playerCollision.ReportEnemyHit();
-                return;
-            }
+            _playerCollision.ReportEnemyHit();
+            return;
         }
 
-        // プレイヤー本体を従来どおり回転・反転し、既存のColliderの
-        // 姿勢も描画方向と一緒に変える。Animatorは子VisualのSpriteだけを更新する
-        if (movement.sqrMagnitude > _rotationThreshold)
+        float deltaTime = Time.deltaTime;
+
+        if (deltaTime > 0f)
         {
-            float angle = Mathf.Atan2(movement.y, movement.x) * Mathf.Rad2Deg;
-            bool facingLeft = Mathf.Abs(angle) > 90f;
-            Vector3 scale = _initialScale;
-            scale.x = facingLeft ? -Mathf.Abs(scale.x) : Mathf.Abs(scale.x);
-            transform.localScale = scale;
+            UpdateTargetDirection(
+                targetScreenPosition,
+                deltaTime);
 
-            if (facingLeft)
-            {
-                angle += 180f;
-            }
-
-            transform.rotation = Quaternion.Euler(0f, 0f, angle);
+            UpdateVisualRotation(deltaTime);
         }
-        // movement がほぼゼロならTransformを変更せず直前の向きを維持
 
-        transform.position = targetPos;
+        // 位置には補間を適用しない。
+        transform.position = targetPosition;
     }
 
     /// <summary>
-    /// 旧GameManagerの呼び出しとの互換性を維持する
-    /// 向きはカーソルの差分ではなく実移動から計算する
+    /// マウス位置をCameraの画面内へ制限する。
+    /// </summary>
+    private Vector2 GetClampedScreenPosition(Vector2 screenPosition)
+    {
+        Rect rect = _mainCamera.pixelRect;
+
+        float marginX = rect.width * _edgeMarginViewport;
+        float marginY = rect.height * _edgeMarginViewport;
+
+        return new Vector2(
+            Mathf.Clamp(
+                screenPosition.x,
+                rect.xMin + marginX,
+                rect.xMax - marginX),
+
+            Mathf.Clamp(
+                screenPosition.y,
+                rect.yMin + marginY,
+                rect.yMax - marginY));
+    }
+
+    /// <summary>
+    /// マウスの短時間の移動速度を平滑化して、
+    /// ピクセル単位の揺れに強い目標角度を推定する。
+    /// </summary>
+    private void UpdateTargetDirection(
+        Vector2 screenPosition,
+        float deltaTime)
+    {
+        Vector2 frameDelta =
+            screenPosition - _previousScreenPosition;
+
+        _previousScreenPosition = screenPosition;
+
+        Vector2 instantaneousVelocity =
+            frameDelta / deltaTime;
+
+        // フレーム時間に依存しにくい指数平滑化係数。
+        float blend = 1f - Mathf.Exp(
+            -deltaTime / _directionFilterTime);
+
+        _filteredVelocity = Vector2.LerpUnclamped(
+            _filteredVelocity,
+            instantaneousVelocity,
+            blend);
+
+        float minSpeedSqr =
+            _minDirectionSpeed * _minDirectionSpeed;
+
+        Vector2 direction;
+
+        if (_filteredVelocity.sqrMagnitude >= minSpeedSqr)
+        {
+            // 通常移動：時間的に平滑化した速度方向を使う。
+            direction = _filteredVelocity.normalized;
+
+            _directionAnchorScreen = screenPosition;
+        }
+        else
+        {
+            // 低速移動：移動距離を蓄積して方向を判断する。
+            Vector2 accumulated =
+                screenPosition - _directionAnchorScreen;
+
+            float minDistanceSqr =
+                _slowDirectionDistancePixels *
+                _slowDirectionDistancePixels;
+
+            if (accumulated.sqrMagnitude < minDistanceSqr)
+            {
+                // 信頼できる方向がないときは前回の目標を維持。
+                return;
+            }
+
+            direction = accumulated.normalized;
+            _directionAnchorScreen = screenPosition;
+        }
+
+        _targetAngle =
+            Mathf.Atan2(direction.y, direction.x) *
+            Mathf.Rad2Deg;
+    }
+
+    /// <summary>
+    /// 推定した進行方向へVisualだけを滑らかに回転する。
+    /// </summary>
+    private void UpdateVisualRotation(float deltaTime)
+    {
+        _currentAngle = Mathf.SmoothDampAngle(
+            _currentAngle,
+            _targetAngle,
+            ref _angularVelocity,
+            _rotationSmoothTime,
+            Mathf.Infinity,
+            deltaTime);
+
+        // 連続した角度をそのまま使う。
+        // 左右反転に合わせて180度加算しない。
+        _visualTransform.localRotation =
+            Quaternion.Euler(0f, 0f, _currentAngle);
+
+        if (!_keepUpright)
+        {
+            // 360度回転を優先する場合、反転は使わない。
+            _visualSpriteRenderer.flipY = false;
+            return;
+        }
+
+        // 魚の上下を保つための左右状態を、
+        // 実際に表示している滑らかな角度から判断する。
+        float directionX =
+            Mathf.Cos(_currentAngle * Mathf.Deg2Rad);
+
+        if (directionX < -_facingHysteresis)
+        {
+            _facingLeft = true;
+        }
+        else if (directionX > _facingHysteresis)
+        {
+            _facingLeft = false;
+        }
+
+        // 描画のみ反転。Colliderには影響させない。
+        _visualSpriteRenderer.flipY = _facingLeft;
+    }
+
+    /// <summary>
+    /// ゲーム開始時や操作再開時に、
+    /// 方向推定の履歴を現在の位置へ同期する。
+    /// </summary>
+    private void ResetDirectionTracking(Vector3 worldPosition)
+    {
+        if (_mainCamera == null)
+        {
+            return;
+        }
+
+        Vector2 screenPosition =
+            _mainCamera.WorldToScreenPoint(worldPosition);
+
+        _previousScreenPosition = screenPosition;
+        _directionAnchorScreen = screenPosition;
+        _filteredVelocity = Vector2.zero;
+
+        _targetAngle = _currentAngle;
+        _angularVelocity = 0f;
+    }
+
+    public void SetMovementEnabled(bool enabled)
+    {
+        _movementEnabled = enabled;
+        ResetDirectionTracking(transform.position);
+    }
+
+    /// <summary>
+    /// GameManagerの既存呼び出しとの互換性を維持する。
     /// </summary>
     public void SetLastMouseWorldPos(Vector3 worldPos)
     {
-        _lastMouseWorldPos = worldPos;
+        ResetDirectionTracking(worldPos);
     }
 }
