@@ -55,6 +55,9 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
+        // 新しいゲーム開始時に前回の終了理由を破棄する。
+        GameOverReasonContext.Clear();
+        
         _mainCamera = Camera.main;
 
         if (_mainCamera == null || player == null)
@@ -343,6 +346,10 @@ public class GameManager : MonoBehaviour
 
         _gameOver = true;
 
+        // 敵との接触によるゲームオーバーを記録する。
+        GameOverReasonContext.SetReason(
+            GameOverReason.EnemyCollision);
+        
         // 衝突が確定した瞬間の生存時間を保存する。
         float survivalTime = _gameStarted
             ? Time.time - _startTime
@@ -398,6 +405,11 @@ public class GameManager : MonoBehaviour
         if (_gameOver) return;
 
         _gameOver = true;
+
+        // 制限時間によるゲーム終了を記録する。
+        GameOverReasonContext.SetReason(
+            GameOverReason.TimeLimit);
+
         PlayerPrefs.SetFloat("LastSurvivalTime", forcedEndTime);
         PlayerPrefs.Save();
 
@@ -405,5 +417,4 @@ public class GameManager : MonoBehaviour
 
         SceneManager.LoadScene("ResultScene");
     }
-
 }
