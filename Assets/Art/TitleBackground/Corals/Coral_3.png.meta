@@ -1,0 +1,1211 @@
+fileFormatVersion: 2
+guid: 9b7ef6e277b05874d86c1c8da88968c7
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7743468430863046848
+    second: Coral_3_0
+  - first:
+      213: -5147764525280869968
+    second: Coral_3_1
+  - first:
+      213: -4067924534307089030
+    second: Coral_3_2
+  - first:
+      213: -5510658270304242820
+    second: Coral_3_3
+  - first:
+      213: 7884144215727133402
+    second: Coral_3_4
+  - first:
+      213: 4662857617700117737
+    second: Coral_3_5
+  - first:
+      213: 4173960741504242187
+    second: Coral_3_6
+  - first:
+      213: 1842641180083684096
+    second: Coral_3_7
+  - first:
+      213: 368648957018376633
+    second: Coral_3_8
+  - first:
+      213: 7793538018372564642
+    second: Coral_3_9
+  - first:
+      213: 8062816194254604900
+    second: Coral_3_10
+  - first:
+      213: 2216639265816533020
+    second: Coral_3_11
+  - first:
+      213: 6964833359853217764
+    second: Coral_3_12
+  - first:
+      213: 1761197603945062960
+    second: Coral_3_13
+  - first:
+      213: 2099858930235702741
+    second: Coral_3_14
+  - first:
+      213: -4009265911991762843
+    second: Coral_3_15
+  - first:
+      213: -7305738916111445836
+    second: Coral_3_16
+  - first:
+      213: -7709872929558651474
+    second: Coral_3_17
+  - first:
+      213: 6953494307456808601
+    second: Coral_3_18
+  - first:
+      213: -4936281247428639864
+    second: Coral_3_19
+  - first:
+      213: 5391816974285871516
+    second: Coral_3_20
+  - first:
+      213: 1385953788481756414
+    second: Coral_3_21
+  - first:
+      213: -2772095301188681875
+    second: Coral_3_22
+  - first:
+      213: -453120455143420039
+    second: Coral_3_23
+  - first:
+      213: -1382860246820755374
+    second: Coral_3_24
+  - first:
+      213: 4138991257415175139
+    second: Coral_3_25
+  - first:
+      213: -6247005567954093674
+    second: Coral_3_26
+  - first:
+      213: 6900573104336225593
+    second: Coral_3_27
+  - first:
+      213: -1814097708921949003
+    second: Coral_3_28
+  - first:
+      213: -3216115075180503
+    second: Coral_3_29
+  - first:
+      213: -6380916675318417821
+    second: Coral_3_30
+  - first:
+      213: -3069435422640890148
+    second: Coral_3_31
+  - first:
+      213: -5333472448209501448
+    second: Coral_3_32
+  - first:
+      213: -5955584924963010007
+    second: Coral_3_33
+  - first:
+      213: 6773059364798195936
+    second: Coral_3_34
+  - first:
+      213: 1562880364452580105
+    second: Coral_3_35
+  - first:
+      213: -562403724818899647
+    second: Coral_3_36
+  - first:
+      213: 8174843210521913207
+    second: Coral_3_37
+  - first:
+      213: 7916189181161742853
+    second: Coral_3_38
+  - first:
+      213: -3272730665620275807
+    second: Coral_3_39
+  - first:
+      213: -5266331901233861930
+    second: Coral_3_40
+  - first:
+      213: -1601786131324107967
+    second: Coral_3_41
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 7
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Coral_3_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 958
+        width: 45
+        height: 245
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 047e4f02d7ca98490800000000000000
+      internalID: -7743468430863046848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_1
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 1050
+        width: 276
+        height: 127
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b1c64330777f88b0800000000000000
+      internalID: -5147764525280869968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_2
+      rect:
+        serializedVersion: 2
+        x: 641
+        y: 1100
+        width: 23
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a7597875034db87c0800000000000000
+      internalID: -4067924534307089030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_3
+      rect:
+        serializedVersion: 2
+        x: 667
+        y: 1164
+        width: 64
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7372f7ff753683b0800000000000000
+      internalID: -5510658270304242820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_4
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 1036
+        width: 462
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2dd58646b1a6d60800000000000000
+      internalID: 7884144215727133402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1235
+        height: 1026
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ec5d356c4cc5b040800000000000000
+      internalID: 4662857617700117737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_6
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 1016
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0259c70e23ece930800000000000000
+      internalID: 4173960741504242187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_7
+      rect:
+        serializedVersion: 2
+        x: 315
+        y: 983
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003056bf360629910800000000000000
+      internalID: 1842641180083684096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_8
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 985
+        width: 18
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b906e1f544bd1500800000000000000
+      internalID: 368648957018376633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_9
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 843
+        width: 90
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a639982985382c60800000000000000
+      internalID: 7793538018372564642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_10
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 779
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 46a00db2c90e4ef60800000000000000
+      internalID: 8062816194254604900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_11
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 714
+        width: 34
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c185d220ba513ce10800000000000000
+      internalID: 2216639265816533020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 609
+        width: 43
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e767dd1a0f08a060800000000000000
+      internalID: 6964833359853217764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_13
+      rect:
+        serializedVersion: 2
+        x: 1127
+        y: 246
+        width: 13
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0322a6ab3e7017810800000000000000
+      internalID: 1761197603945062960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_14
+      rect:
+        serializedVersion: 2
+        x: 1086
+        y: 203
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dd712f4292342d10800000000000000
+      internalID: 2099858930235702741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_15
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 194
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56006a125e93c58c0800000000000000
+      internalID: -4009265911991762843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_16
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 162
+        width: 6
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b01e6bc92dcc9a90800000000000000
+      internalID: -7305738916111445836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_17
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 140
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ead91425b67010590800000000000000
+      internalID: -7709872929558651474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_18
+      rect:
+        serializedVersion: 2
+        x: 609
+        y: 138
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 996f9af3b36cf7060800000000000000
+      internalID: 6953494307456808601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_19
+      rect:
+        serializedVersion: 2
+        x: 1055
+        y: 142
+        width: 21
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8830897eb5ece7bb0800000000000000
+      internalID: -4936281247428639864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_20
+      rect:
+        serializedVersion: 2
+        x: 1075
+        y: 132
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c991b3698f493da40800000000000000
+      internalID: 5391816974285871516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_21
+      rect:
+        serializedVersion: 2
+        x: 818
+        y: 115
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: efcdf85a0a5eb3310800000000000000
+      internalID: 1385953788481756414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_22
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 95
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6f7e11c20a8789d0800000000000000
+      internalID: -2772095301188681875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_23
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 103
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97f86b6c85136b9f0800000000000000
+      internalID: -453120455143420039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_24
+      rect:
+        serializedVersion: 2
+        x: 780
+        y: 94
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2586d36aee71fcce0800000000000000
+      internalID: -1382860246820755374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_25
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 77
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ebcdaa8e96a07930800000000000000
+      internalID: 4138991257415175139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_26
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 77
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6997534b88d2e49a0800000000000000
+      internalID: -6247005567954093674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_27
+      rect:
+        serializedVersion: 2
+        x: 506
+        y: 95
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93543967da2c3cf50800000000000000
+      internalID: 6900573104336225593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_28
+      rect:
+        serializedVersion: 2
+        x: 508
+        y: 89
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b47bd7ceb703d6e0800000000000000
+      internalID: -1814097708921949003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_29
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 76
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 928136bd5f294fff0800000000000000
+      internalID: -3216115075180503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_30
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 59
+        width: 43
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3667742671e6277a0800000000000000
+      internalID: -6380916675318417821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_31
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 85
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cde1d74eebc2765d0800000000000000
+      internalID: -3069435422640890148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_32
+      rect:
+        serializedVersion: 2
+        x: 297
+        y: 71
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f2c329f013bbf5b0800000000000000
+      internalID: -5333472448209501448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_33
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 46
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92a88e59013895da0800000000000000
+      internalID: -5955584924963010007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_34
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 56
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e8ed696b9dbefd50800000000000000
+      internalID: 6773059364798195936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_35
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 35
+        width: 29
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90b01a5396770b510800000000000000
+      internalID: 1562880364452580105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_36
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 46
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14d10d1cac0f138f0800000000000000
+      internalID: -562403724818899647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_37
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 27
+        width: 13
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7772ca97690e27170800000000000000
+      internalID: 8174843210521913207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_38
+      rect:
+        serializedVersion: 2
+        x: 553
+        y: 47
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 502afe55e14fbdd60800000000000000
+      internalID: 7916189181161742853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_39
+      rect:
+        serializedVersion: 2
+        x: 790
+        y: 36
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1adfc2e9ccce492d0800000000000000
+      internalID: -3272730665620275807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_40
+      rect:
+        serializedVersion: 2
+        x: 934
+        y: 47
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6dae5adb90b3ae6b0800000000000000
+      internalID: -5266331901233861930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Coral_3_41
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 29
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 143874c000055c9e0800000000000000
+      internalID: -1601786131324107967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Coral_3_0: -7743468430863046848
+      Coral_3_1: -5147764525280869968
+      Coral_3_10: 8062816194254604900
+      Coral_3_11: 2216639265816533020
+      Coral_3_12: 6964833359853217764
+      Coral_3_13: 1761197603945062960
+      Coral_3_14: 2099858930235702741
+      Coral_3_15: -4009265911991762843
+      Coral_3_16: -7305738916111445836
+      Coral_3_17: -7709872929558651474
+      Coral_3_18: 6953494307456808601
+      Coral_3_19: -4936281247428639864
+      Coral_3_2: -4067924534307089030
+      Coral_3_20: 5391816974285871516
+      Coral_3_21: 1385953788481756414
+      Coral_3_22: -2772095301188681875
+      Coral_3_23: -453120455143420039
+      Coral_3_24: -1382860246820755374
+      Coral_3_25: 4138991257415175139
+      Coral_3_26: -6247005567954093674
+      Coral_3_27: 6900573104336225593
+      Coral_3_28: -1814097708921949003
+      Coral_3_29: -3216115075180503
+      Coral_3_3: -5510658270304242820
+      Coral_3_30: -6380916675318417821
+      Coral_3_31: -3069435422640890148
+      Coral_3_32: -5333472448209501448
+      Coral_3_33: -5955584924963010007
+      Coral_3_34: 6773059364798195936
+      Coral_3_35: 1562880364452580105
+      Coral_3_36: -562403724818899647
+      Coral_3_37: 8174843210521913207
+      Coral_3_38: 7916189181161742853
+      Coral_3_39: -3272730665620275807
+      Coral_3_4: 7884144215727133402
+      Coral_3_40: -5266331901233861930
+      Coral_3_41: -1601786131324107967
+      Coral_3_5: 4662857617700117737
+      Coral_3_6: 4173960741504242187
+      Coral_3_7: 1842641180083684096
+      Coral_3_8: 368648957018376633
+      Coral_3_9: 7793538018372564642
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
